@@ -5,7 +5,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Read the CSV file into a DataFrame
-df = pd.read_csv('birdedex1.csv')
+df = pd.read_csv('Birdedex1.csv')
 
 # Create a dictionary to store bird sightings
 bird_sightings = {bird: None for bird in df['Bird']}
