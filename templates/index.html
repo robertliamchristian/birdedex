@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Bird&eacute;dex</title>
+    <style>
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 140px;
+            background-color: #A80824;
+            color: white;
+            text-align: center;
+            padding: 0px;
+            z-index: 1;
+        }
+
+        #name_header {
+        	font-size: 36pt;
+        	margin-bottom: 0px;
+        	margin-top: 5px;
+        }
+
+        #subheader {
+        	color: white;
+        	margin-bottom: 10px;
+
+        }
+
+        #content {
+            margin-top: 115px;  /* Adjusted to 90px */
+            padding: 20px;
+            overflow-y: auto;
+            height: calc(100vh - 90px);  /* Adjusted to 90px */
+            background-color: #D1D0CE;
+            color: #5F5D59;
+            width: 100%;
+        }
+
+        #main-container {
+            max-width: 200px;
+            max-height: 400px;
+            margin: auto;
+        }
+
+        #spacer {
+            height: 10px; 
+        }
+        body {
+    		font-family: "Avenir Next", monospace;
+}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="name_header"><b>Bird&eacute;dex</b></div>
+        <div id="subheader">{{ sighted_count }}/{{ total_count }} Total Logged</div>
+        <form action="/" method="post">
+            <input type="text" name="bird_name" placeholder="Enter a bird name">
+            <input type="submit" value="Submit">
+        </form>
+        {% if message %}
+        <p>{{ message }}</p>
+        {% endif %}
+    </div>
+    <!--<div id="spacer"></div>-->
+    <div id="content">
+        <ol>
+            {% for bird, time in bird_sightings.items() %}
+            <li>
+                {% if time %}
+                {{ bird }} ({{ time }})
+                {% else %}
+                ???
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ol>
+    </div>
+</body>
+</html>
