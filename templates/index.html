@@ -51,6 +51,9 @@
         body {
     		font-family: "Avenir Next", monospace;
 }
+        ul.no-bullets {
+  list-style-type: none; 
+}
     </style>
 </head>
 <body>
@@ -66,16 +69,24 @@
         {% endif %}
     </div>
 <div id="content">
-    <ul style="list-style-type: none;">
-        {% for sighting in bird_sightings %}
-            {% if sighting.sighting_time %}
-                <li>{{ sighting.birdid }}. {{ sighting.bird }} - {{ sighting.sighting_time }}</li>
-            {% else %}
-                <li>{{ sighting.birdid }}. ???</li>
-            {% endif %}
-        {% endfor %}
-    </ul>
+    {% for bird_type, sightings in grouped_sightings.items() %}
+        <h3>{{ bird_type }}</h3>
+        <ul class=no-bullets>
+            {% for counter, sighting in sightings %}
+                <li>
+                    {{ counter }}. 
+                    {% if sighting.sighting_time %}
+                        {{ sighting.bird }} - {{ sighting.sighting_time }}
+                    {% else %}
+                        ???
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
 </div>
+
+
 
 </body>
 </html>

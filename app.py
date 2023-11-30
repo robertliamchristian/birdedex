@@ -45,16 +45,29 @@ def index():
             db.session.commit()
             message = f"{new_bird} has been sighted."
 
-    bird_sightings = Log.query.order_by(Log.birdid.asc()).all()
-    print("Retrieved bird sightings:", bird_sightings)  
+    bird_sightings = Log.query.order_by(Log.bird_type,Log.bird.asc()).all()
+    
     sighted_count = Log.query.filter(Log.sighting_time.isnot(None)).count()
-    print("Total number of sightings:", sighted_count)  
+    
+    grouped_sightings = {}
+    counter = 1
+    for sighting in bird_sightings:
+        if sighting.bird_type not in grouped_sightings:
+            grouped_sightings[sighting.bird_type] = []
+        grouped_sightings[sighting.bird_type].append((counter, sighting))
+        counter += 1
+        
     total_bird_count = 745  # Total number of birds that can be sighted
+    
     if bird_sightings:
         print("First sighting:", bird_sightings[0].bird, bird_sightings[0].sighting_time)
     
 
-    return render_template('index.html', bird_sightings=bird_sightings, message=message, sighted_count=sighted_count, total_bird_count=total_bird_count)
+    return render_template('index.html', 
+                           grouped_sightings=grouped_sightings, 
+                           message=message, 
+                           sighted_count=sighted_count, 
+                           total_bird_count=total_bird_count)
 
 if __name__ == '__main__':
     with app.app_context():
