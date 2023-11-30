@@ -56,28 +56,26 @@
 <body>
     <div id="header">
         <div id="name_header"><b>Bird&eacute;dex</b></div>
-        <div id="subheader">{{ sighted_count }}/{{ total_count }} Total Logged</div>
+        <div id="subheader">{{ sighted_count }}/{{ total_bird_count }} Total Logged</div>
         <form action="/" method="post">
-            <input type="text" name="bird_name" placeholder="Enter a bird name">
+            <input type="text" name="bird" placeholder="Enter a bird name">
             <input type="submit" value="Submit">
         </form>
         {% if message %}
         <p>{{ message }}</p>
         {% endif %}
     </div>
-    <!--<div id="spacer"></div>-->
-    <div id="content">
-        <ol>
-            {% for bird, time in bird_sightings.items() %}
-            <li>
-                {% if time %}
-                {{ bird }} ({{ time }})
-                {% else %}
-                ???
-                {% endif %}
-            </li>
-            {% endfor %}
-        </ol>
-    </div>
+<div id="content">
+    <ul style="list-style-type: none;">
+        {% for sighting in bird_sightings %}
+            {% if sighting.sighting_time %}
+                <li>{{ sighting.birdid }}. {{ sighting.bird }} - {{ sighting.sighting_time }}</li>
+            {% else %}
+                <li>{{ sighting.birdid }}. ???</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
 </body>
 </html>
