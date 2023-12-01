@@ -1,10 +1,12 @@
 
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
+from flask import jsonify
 from datetime import datetime
 import os
 from dotenv import load_dotenv
 load_dotenv()  
+
 
 
 app = Flask(__name__)
@@ -28,6 +30,17 @@ class Log(db.Model):
 
     def __repr__(self):
         return f'<log {self.birdid}>'
+    
+@app.route('/suggest_birds')
+def suggest_birds():
+    query = request.args.get('query')
+    if not query:
+        return jsonify([])  # Return empty list if no query
+
+    # Fetch matching bird names from the database (modify according to your database structure)
+    matching_birds = Log.query.filter(Log.bird.ilike(f'%{query}%')).all()
+    bird_names = [bird.bird for bird in matching_birds]
+    return jsonify(bird_names)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
