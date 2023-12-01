@@ -32,6 +32,7 @@ class Log(db.Model):
 @app.route('/', methods=['GET', 'POST'])
 def index():
     message = ""
+    anchor_id = ""
     if request.method == 'POST':
         new_bird = request.form['bird']
         sighting = Log.query.filter_by(bird=new_bird).first()
@@ -39,8 +40,8 @@ def index():
             sighting.sighting_time = datetime.now()
             db.session.commit()
             message = f"{new_bird} sighting updated."
+            anchor_id = f"bird-{sighting.birdid}"
         else:
-            # Instead of adding a new sighting, display a message that the bird was not found
             message = f"{new_bird} not found in Birdedex."
 
     bird_sightings = Log.query.order_by(Log.bird_type,Log.bird.asc()).all()
@@ -54,18 +55,15 @@ def index():
             grouped_sightings[sighting.bird_type] = []
         grouped_sightings[sighting.bird_type].append((counter, sighting))
         counter += 1
-        
-    total_bird_count = 745  # Total number of birds that can be sighted
+    total_bird_count = 745  
     
-    if bird_sightings:
-        print("First sighting:", bird_sightings[0].bird, bird_sightings[0].sighting_time)
-    
-
-    return render_template('index.html', 
+    if bird_sightings:    
+        return render_template('index.html', 
                            grouped_sightings=grouped_sightings, 
                            message=message, 
                            sighted_count=sighted_count, 
-                           total_bird_count=total_bird_count)
+                           total_bird_count=total_bird_count,
+                           anchor_id=anchor_id)
 
 if __name__ == '__main__':
     with app.app_context():

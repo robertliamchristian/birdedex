@@ -73,7 +73,7 @@
         <h3>{{ bird_type }}</h3>
         <ul class=no-bullets>
             {% for counter, sighting in sightings %}
-                <li>
+                <li id="bird-{{ sighting.birdid }}">
                     {{ counter }}. 
                     {% if sighting.sighting_time %}
                         {{ sighting.bird }} - {{ sighting.sighting_time }}
@@ -85,6 +85,17 @@
         </ul>
     {% endfor %}
 </div>
+
+{% if anchor_id %}
+<script>
+window.onload = function() {
+    var element = document.getElementById("{{ anchor_id }}");
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+};
+</script>
+{% endif %}
 
 
 
