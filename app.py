@@ -40,10 +40,8 @@ def index():
             db.session.commit()
             message = f"{new_bird} sighting updated."
         else:
-            new_sighting = Log(bird=new_bird, sighting_time=datetime.now())
-            db.session.add(new_sighting)
-            db.session.commit()
-            message = f"{new_bird} has been sighted."
+            # Instead of adding a new sighting, display a message that the bird was not found
+            message = f"{new_bird} not found in Birdedex."
 
     bird_sightings = Log.query.order_by(Log.bird_type,Log.bird.asc()).all()
     
