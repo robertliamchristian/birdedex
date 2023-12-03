@@ -23,10 +23,6 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
-#class User(UserMixin, db.Model):
- #   id = db.Column(db.Integer, primary_key=True)
-  #  username = db.Column(db.String(80), unique=True, nullable=False)
-   # password_hash = db.Column(db.String(128))
 
 class UserSighting(db.Model):
     __tablename__ = 'user_sighting'
@@ -143,14 +139,11 @@ def index():
 
             db.session.commit()
 
-    # Get all birds from the Log (master list)
     all_birds = Log.query.order_by(Log.birdid).all()
 
-    # Get the sightings for the current user
     user_sightings = UserSighting.query.filter_by(userid=current_user.id).all()
     user_sightings_dict = {sighting.birdref: sighting for sighting in user_sightings}
 
-    # Combine the master list with the user's sightings
     user_birdedex = {}
     default_bird_type = "Other"  # For birds without a specified type
 
