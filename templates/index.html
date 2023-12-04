@@ -2,185 +2,235 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Bird&eacute;dex</title>
+    <title>Birdédex</title>
     <style>
+        body {
+            font-family: "Avenir Next", monospace;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
 
         #header {
+            display: flex;
+            align-items: center;
             position: fixed;
-            top: 0px;
+            top: 0;
             left: 0;
             width: 100%;
-            height: 200px;
-            background-color: #A80824;
+            background-color: #FF6B6B;
             color: white;
-            text-align: center;
-            padding: 0px;
-            z-index: 0;
+            z-index: 10;
+            padding: 10px;
         }
 
         #name_header {
-        	font-size: 36pt;
-        	margin-bottom: 0px;
-        	margin-top: 5px;
+            font-size: 20pt;
+            margin: 0;
+            color: #FFFFFF;
+            flex-shrink: 0;
+            margin-bottom: 95px;
+        }
+
+        #center-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            margin-top: 25px;
+        }
+
+        #logout {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            margin-right: 15px;
+            margin-bottom: 65px;
+        }
+
+        #logout span, #logout form {
+            font-size: 8pt;
+        }
+
+        input[type="submit"] {
+            background-color: #4D96FF;
+            color: white;
+            cursor: pointer;
+            font-size: 8pt;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2271e3;
         }
 
         #subheader {
-        	color: white;
-        	margin-bottom: 10px;
+            margin-bottom: 5px;
+            font-size: 8pt;
 
         }
 
         #content {
-            margin-top: 175px;  /* Adjusted to 90px */
+            margin-top: 130px; /* Adjust based on actual header size */
             padding: 20px;
             overflow-y: auto;
-            height: calc(100vh - 90px);  /* Adjusted to 90px */
-            background-color: #D1D0CE;
-            color: #5F5D59;
-            width: 100%;
-        }
-
-        #main-container {
-            max-width: 200px;
-            max-height: 400px;
-            margin: auto;
-        }
-
-        #spacer {
-            height: 10px; 
-        }
-
-        body {
-    		font-family: "Avenir Next", monospace;
+            height: calc(100vh - 100px);
+            background-color: #FFFFFF;
+            color: #333;
         }
 
         ul.no-bullets {
-            list-style-type: none; 
+            list-style-type: none;
+            padding: 0;
         }
-        
+
         #suggestions {
-            border: 1px solid #A80824;
-            position: right;
-            background-color: #A80824;
+            border: 1px solid #FFD6D6;
+            position: absolute;
+            background-color: #FF6B6B;
+            color: #333;
+            width: calc(100% - 40px);
+            box-sizing: border-box;
+            top: 100%;
+            left: 20px;
+            z-index: 5;
         }
 
         #suggestions div {
             padding: 5px;
             cursor: pointer;
+            background-color: #FF6B6B;
         }
 
         #suggestions div:hover {
-            background-color: #A80824;
+            background-color: #FFD6D6;
         }
 
-        #nav {
-            color: black;
-            padding-top: 0px;
-
+        #update_message {
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 12pt;
+            padding: 0px;
+            margin-top: -15px;
         }
-        
 
+        input[type="text"], input[type="submit"] {
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 5px;
+            width: auto;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            margin: 0 10px;
+        }
+
+        #bird-input {
+            flex-grow: 1;
+            margin-right: 10px;
+        }
+
+        #form_add_bird {
+            margin-top: -10px;
+        }
     </style>
 </head>
 <body>
-    
     <div id="header">
-        <div id="name_header"><b>Bird&eacute;dex</b></div>
-        <nav>
-            {% if current_user.is_authenticated %}
-                <span>Welcome, {{ current_user.username }}!</span>
-                <form action="{{ url_for('logout') }}" method="post">
-                    <input type="submit" value="Logout">
-                    <br>
-                    <br>
-                </form>
-            {% endif %}
-        </nav>
-        <div id="subheader">{{ sighted_count }}/{{ total_bird_count }} Total Logged</div>
-    <form action="/" method="post">
-        <input type="text" name="bird" id="bird-input" placeholder="Enter a bird name" oninput="fetchSuggestions()">
-        <input type="submit" value="Submit">
-        <div id="suggestions" style="display:none;"></div>
-    </form>
-    {% if message %}
-    <p>{{ message }}</p>
-    {% endif %}
-</div> 
-<div id="content">
-    {% for bird_type, bird_list in user_birdedex.items() %}
-        <h3>{{ bird_type }}</h3>
-        <ul class="no-bullets">
-            {% for birdid, bird_name, sighting_time in bird_list %}
-                <li> 
-                    {{ birdid }}. {{ bird_name }} 
-                    {% if sighting_time %}
-                        - {{ sighting_time.strftime('%m-%d-%Y') }}
-                    {% endif %}
-                </li>
-            {% endfor %}
-        </ul>
-    {% endfor %}
-</div>
+        <div id="name_header"><b>Birdédex</b></div>
+        
+        <div id="center-container">
+            <div id="subheader">{{ sighted_count }}/{{ total_bird_count }} Total Logged</div>
+            <form id="form_add_bird" action="/" method="post">
+                <input type="text" name="bird" id="bird-input" placeholder="Enter a bird name" oninput="fetchSuggestions()">
+                <input type="submit" value="Submit">
+            </form>
+            <div id="update_message">
+                {% if message %}
+                    <p>{{ message }}</p>
+                {% endif %}
+            </div>    
+            <div id="suggestions" style="display:none;"></div>
+        </div>
 
+        <div id="logout">
+            <nav>
+                {% if current_user.is_authenticated %}
+                    <span>Logged in as {{ current_user.username }}</span>
+                    <form action="{{ url_for('logout') }}" method="post">
+                        <input type="submit" value="Logout">
+                    </form>
+                {% endif %}
+            </nav>
+        </div>
+    </div>
 
+    <div id="content">
+        {% for bird_type, bird_list in user_birdedex.items() %}
+            <h3>{{ bird_type }}</h3>
+            <ul class="no-bullets">
+                {% for birdid, bird_name, sighting_time in bird_list %}
+                    <li> 
+                        {{ birdid }}. {{ bird_name }} 
+                        {% if sighting_time %}
+                            - {{ sighting_time.strftime('%m-%d-%Y') }}
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    </div>
 
+    <script>
+    window.onload = function() {
+        var element = document.getElementById("{{ anchor_id }}");
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    };
 
-{% if anchor_id %}
-<script>
-window.onload = function() {
-    var element = document.getElementById("{{ anchor_id }}");
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    function fetchSuggestions() {
+        var input = document.getElementById('bird-input');
+        var query = input.value;
+
+        if (query.length < 2) {
+            document.getElementById('suggestions').style.display = 'none';
+            return;
+        }
+
+        fetch('/suggest_birds?query=' + query)
+            .then(response => response.json())
+            .then(suggestions => {
+                var suggestionsDiv = document.getElementById('suggestions');
+                suggestionsDiv.innerHTML = '';
+                suggestions.forEach(function(suggestion) {
+                    var div = document.createElement('div');
+                    div.innerHTML = suggestion;
+                    div.onclick = function() {
+                        input.value = suggestion;
+                        suggestionsDiv.style.display = 'none';
+                    };
+                    suggestionsDiv.appendChild(div);
+                });
+                if (suggestions.length > 0) {
+                    suggestionsDiv.style.display = 'block';
+                } else {
+                    suggestionsDiv.style.display = 'none';
+                }
+            })
+            .catch(error => console.error('Error fetching suggestions:', error));
     }
-};
-</script>
-{% endif %}
 
-<input type="text" name="bird" id="bird-input" placeholder="Enter a bird name" oninput="fetchSuggestions()">
-
-<div id="suggestions" style="display:none;"></div>
-
-<script>
-function fetchSuggestions() {
-    var input = document.getElementById('bird-input');
-    var query = input.value;
-
-    if (query.length < 2) {  // Adjust the length as needed
-        document.getElementById('suggestions').style.display = 'none';
-        return; // Don't fetch suggestions for very short queries
-    }
-
-    fetch('/suggest_birds?query=' + query)
-        .then(response => response.json())
-        .then(suggestions => {
-            var suggestionsDiv = document.getElementById('suggestions');
-            suggestionsDiv.innerHTML = ''; // Clear previous suggestions
-            suggestions.forEach(function(suggestion) {
-                var div = document.createElement('div');
-                div.innerHTML = suggestion;
-                div.onclick = function() {
-                    input.value = suggestion; // Fill input with selected suggestion
-                    suggestionsDiv.style.display = 'none'; // Hide suggestions
-                };
-                suggestionsDiv.appendChild(div);
-            });
-            if (suggestions.length > 0) {
-                suggestionsDiv.style.display = 'block';
-            } else {
-                suggestionsDiv.style.display = 'none';
-            }
-        })
-        .catch(error => console.error('Error fetching suggestions:', error));
-}
-
-window.onclick = function(event) {
-    if (!event.target.matches('#bird-input')) {
-        document.getElementById('suggestions').style.display = 'none';
-    }
-};
-</script>
-
-
+    window.onclick = function(event) {
+        if (!event.target.matches('#bird-input')) {
+            document.getElementById('suggestions').style.display = 'none';
+        }
+    };
+    </script>
 
 </body>
 </html>
