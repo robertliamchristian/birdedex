@@ -13,6 +13,7 @@
 
         #header {
             display: flex;
+            justify-content: space-between; /* This will align children to each end */
             align-items: center;
             position: fixed;
             top: 0;
@@ -29,7 +30,7 @@
             margin: 0;
             color: #FFFFFF;
             flex-shrink: 0;
-            margin-bottom: 95px;
+            margin-bottom: 0px;
         }
 
         #center-container {
@@ -70,7 +71,7 @@
         }
 
         #content {
-            margin-top: 130px; /* Adjust based on actual header size */
+            margin-top: 50px; /* Adjust based on actual header size */
             padding: 20px;
             overflow-y: auto;
             height: calc(100vh - 100px);
@@ -83,22 +84,18 @@
             padding: 0;
         }
 
-        #suggestions {
-            border: 1px solid #FFD6D6;
-            position: absolute;
-            background-color: #FF6B6B;
-            color: #333;
-            width: calc(100% - 40px);
-            box-sizing: border-box;
-            top: 100%;
-            left: 20px;
-            z-index: 5;
-        }
+      #suggestions {
+                width: calc(100% - 20px); /* Adjust width to line up with the input */
+                left: 10px; /* Align left edge with the input */
+                top: unset;
+                bottom: -100vh; /* Position it at the bottom of the form */
+            }
 
         #suggestions div {
-            padding: 5px;
+            padding: 10px;
             cursor: pointer;
-            background-color: #FF6B6B;
+            background-color: #FF5C5C; /* Slightly lighter than menu background */
+            color: white;
         }
 
         #suggestions div:hover {
@@ -130,44 +127,130 @@
         }
 
         #bird-input {
-            flex-grow: 1;
+            flex-grow: 1; /* or you can use width: 100%; */
             margin-right: 10px;
+            max-width: 125px; /* Set a max-width that fits your design */
         }
 
-        #form_add_bird {
+       #form_add_bird {
+            position: relative;
             margin-top: -10px;
+        }
+
+                .hamburger-menu {
+            cursor: pointer;
+            padding: 10px;
+            font-size: 29pt;
+        }
+
+        .hamburger-menu {
+            cursor: pointer;
+            font-size: 29pt;
+            position: fixed;
+            top: 0px;
+            right: 10px; /* Move to the right */
+            z-index: 12; /* Above the slide-in menu */
+            margin-bottom: 0px;
+        }
+
+        .menu {
+            height: 100%;
+            width: 0; /* Initially the width is 0 */
+            position: fixed;
+            z-index: 11; /* Above the header but below the hamburger icon */
+            top: 0;
+            right: 0; /* Slide in from the right */
+            background-color: #FF6B6B;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px; /* Space for the close button */
+        }
+
+        .menu a.closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #total-logged {
+            font-size: 10pt; /* Adjust the font size as needed */
+            margin-top: 5px; /* Adds a little space between the title and this line */
+        }
+
+        .menu-content {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+
+        .menu-content span {
+            white-space: nowrap; /* Prevents the text from wrapping */
+        }
+
+        .menu-content form {
+            margin: 0; /* Removes margin */
+        }
+
+        .menu-content input[type="submit"] {
+            padding: 8px 16px; /* Adjust padding to fit your design */
+            /* Add any additional styling for the logout button here */
+        }
+
+        .menu {
+            background-color: #FF5C5C; /* Slightly different shade for example */
+        }
+
+        .user-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px; 
+            font-size: 10pt;
+        }
+
+        .bird-search form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     </style>
 </head>
 <body>
+    
     <div id="header">
-        <div id="name_header"><b>Birdédex</b></div>
+        <div id="name_header">
+            <b>Birdédex</b>
+            <div id="total-logged">Total Logged {{ sighted_count }}/{{ total_bird_count }}</div>
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+    </div>
+    
+    <div id="slide-in-menu" class="menu">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+    
+    {% if current_user.is_authenticated %}
+    <div class="menu-content">
+        <div class="user-info">
+            <span>Logged in as {{ current_user.username }}</span>
+            <form action="{{ url_for('logout') }}" method="post">
+                <input type="submit" value="Logout">
+            </form>
+        </div>
         
-        <div id="center-container">
-            <div id="subheader">{{ sighted_count }}/{{ total_bird_count }} Total Logged</div>
-            <form id="form_add_bird" action="/" method="post">
+        <div class="bird-search">
+            <form action="/" method="post">
                 <input type="text" name="bird" id="bird-input" placeholder="Enter a bird name" oninput="fetchSuggestions()">
                 <input type="submit" value="Submit">
             </form>
-            <div id="update_message">
-                {% if message %}
-                    <p>{{ message }}</p>
-                {% endif %}
-            </div>    
-            <div id="suggestions" style="display:none;"></div>
         </div>
-
-        <div id="logout">
-            <nav>
-                {% if current_user.is_authenticated %}
-                    <span>Logged in as {{ current_user.username }}</span>
-                    <form action="{{ url_for('logout') }}" method="post">
-                        <input type="submit" value="Logout">
-                    </form>
-                {% endif %}
-            </nav>
-        </div>
+        <div id="suggestions" style="display:none;"></div>
     </div>
+    {% endif %}
+</div>
+
 
     <div id="content">
         {% for bird_type, bird_list in user_birdedex.items() %}
@@ -185,7 +268,13 @@
         {% endfor %}
     </div>
 
+
+
     <script>
+    function toggleMenu() {
+    var menu = document.getElementById("slide-in-menu");
+    menu.style.width = menu.style.width === '250px' ? '0' : '250px';
+}
     window.onload = function() {
         var element = document.getElementById("{{ anchor_id }}");
         if (element) {
