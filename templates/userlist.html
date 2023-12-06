@@ -216,13 +216,48 @@
             justify-content: space-between;
             align-items: center;
         }
+
+
+        a:link {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        a.active {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        .white_content_link:link{
+            color: #25b8f7;
+        }
+        .white_content_link:visited {
+            color: #25b8f7;
+        }
+        .white_content_link:hover {
+            color: #25b8f7;
+        }
+        .white_content_link:active {
+            color: #25b8f7;
+        }
+
     </style>
 </head>
 <body>
     
     <div id="header">
         <div id="name_header">
-            <b>Birdédex Lists</b>
+                <a href="{{ url_for('index') }}"><b>Birdédex Lists</b></a>
             <div id="total-logged">Total Logged {{ sighted_count }}/{{ total_bird_count }}</div>
         </div>
         <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
@@ -260,7 +295,7 @@
         <ul>
             {% for list in lists %}
                 <li>
-                    <a href="{{ url_for('view_list', listid=list.listid) }}">{{ list.title }}</a>
+                    <a class="white_content_link" href="{{ url_for('view_list', listid=list.listid) }}">{{ list.title }}</a>
                     - Created on {{ list.created_at.strftime('%Y-%m-%d') }}
                 </li>
             {% else %}

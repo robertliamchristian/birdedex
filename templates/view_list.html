@@ -222,6 +222,26 @@
             margin-top: 50px;
         }
 
+        a:link {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        a.active {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
 
     </style>
 </head>
@@ -229,7 +249,7 @@
     
     <div id="header">
         <div id="name_header">
-            <b>Birdédex Lists</b>
+            <a href="{{ url_for('index') }}"><b>Birdédex Lists</b></a>
             <div id="total-logged">Total Logged {{ sighted_count }}/{{ total_bird_count }}</div>
         </div>
         <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
