@@ -1,0 +1,907 @@
+﻿birdid,Region,family,bird,latin,flags,sighting_time,bird_type,t_order,Family Rank
+1,US, Parulidae,﻿﻿Palm Warbler,,,,,,0
+2,US, Anatidae,Masked Duck,Nomonyx dominica,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+3,US, Anatidae,Ruddy Duck,Oxyura jamaicensis,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+4,US, Anatidae,Mute Swan,Cygnus olor,Introduced species,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+5,US, Anatidae,Barnacle Goose,,,,,ANSERIFORMES,1
+6,US, Anatidae,Trumpeter Swan,Cygnus buccinator,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+7,US, Anatidae,Cackling Goose,,,,,ANSERIFORMES,1
+8,US, Anatidae,Whooping Swan,,,,,ANSERIFORMES,1
+9,US, Anatidae,Tundra Swan,Cygnus columbianus,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+10,US, Anatidae,Pink-footed Goose,Anser brachyrhynchus,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+11,US, Anatidae,Graylag Goose,,,,,ANSERIFORMES,1
+12,US, Anatidae,Taiga Bean-Goose,,,,,ANSERIFORMES,1
+13,US, Anatidae,Greater White-fronted Goose,Anser albifrons,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+14,US, Anatidae,Snow Goose,Anser caerulescens,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+15,US, Anatidae,Brant,,,,,ANSERIFORMES,1
+16,US, Anatidae,Ross's Goose,Anser rossii,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+17,US, Anatidae,Emperor Goose,Anser canagica,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+18,US, Anatidae,Canada Goose,Branta canadensis,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+19,US, Anatidae,Tundra Bean-Goose,Branta hutchinsii,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+20,US, Anatidae,Wood Duck,Aix sponsa,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+21,US, Anatidae,Gadwall,Anas strepera,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+22,US, Anatidae,Eurasian Wigeon,Anas penelope,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+23,US, Anatidae,American Wigeon,Anas americana,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+24,US, Anatidae,American Black Duck,Anas rubripes,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+25,US, Anatidae,Mottled Duck,Anas fulvigula,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+26,US, Anatidae,Mallard,Anas platyrhynchos,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+27,US, Anatidae,Blue-winged Teal,Anas discors,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+28,US, Anatidae,Cinnamon Teal,Anas cyanoptera,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+29,US, Anatidae,Northern Shoveler,Anas clypeata,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+30,US, Anatidae,Northern Pintail,Anas acuta,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+31,US, Anatidae,Canvasback,Aythya valisineria,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+32,US, Anatidae,Redhead,Aythya americana,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+33,US, Anatidae,Ring-necked Duck,Aythya collaris,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+34,US, Anatidae,Tufted Duck,Aythya fuligula,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+35,US, Anatidae,Greater Scaup,Aythya marila,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+36,US, Anatidae,Lesser Scaup,Aythya affinis,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+37,US, Anatidae,Common Eider,Somateria mollissima,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+38,US, Anatidae,King Eider,Somateria spectabilis,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+39,US, Anatidae,Harlequin Duck,Histrionicus histrionicus,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+40,US, Anatidae,Long-tailed Duck,Clangula hyemalis,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+41,US, Anatidae,Black Scoter,Melanitta nigra,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+42,US, Anatidae,Surf Scoter,Melanitta perspicillata,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+43,US, Anatidae,White-winged Scoter,Melanitta fusca,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+44,US, Anatidae,Common Goldeneye,Bucephala clangula,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+45,US, Anatidae,Barrow's Goldeneye,Bucephala islandica,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+46,US, Anatidae,Bufflehead,Bucephala albeola,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+47,US, Anatidae,Hooded Merganser,Lophodytes cucullatus,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+48,US, Anatidae,Red-breasted Merganser,Mergus serrator,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+49,US, Anatidae,Common Merganser,Mergus merganser,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+50,US, Anatidae,Black-bellied Whistling-Duck,Dendrocygna autumnalis,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+51,US, Anatidae,Fulvous Whistling-Duck,Dendrocygna bicolor,,,"Ducks, Geese, & Swans",ANSERIFORMES,1
+52,US, Anatidae,Muscovy Duck,,,,,ANSERIFORMES,1
+53,US, Anatidae,Falcated Duck,,,,,ANSERIFORMES,1
+54,US, Anatidae,Green-winged Teal,,,,,ANSERIFORMES,1
+55,US, Anatidae,White-cheeked Pintail,,,,,ANSERIFORMES,1
+56,US, Anatidae,Garganey,,,,,ANSERIFORMES,1
+57,US, Anatidae,Baikal Teal,,,,,ANSERIFORMES,1
+58,US, Anatidae,Common Pochard,,,,,ANSERIFORMES,1
+59,US, Anatidae,Steller's Eider,,,,,ANSERIFORMES,1
+60,US, Anatidae,Spectacled Eider,,,,,ANSERIFORMES,1
+61,US, Anatidae,Smew,,,,,ANSERIFORMES,1
+62,US, Cracidae,Plain Chachalaca,Ortalis vetula,,,,CRACIFORMES,2
+63,US, Odontophoridae,Mountain Quail,Oreortyx pictus,,,"Pheasants, Quails, & Turkeys",GALLIFORMES,3
+64,US, Odontophoridae,Scaled Quail,Callipepla squamata,,,"Pheasants, Quails, & Turkeys",GALLIFORMES,3
+65,US, Odontophoridae,California Quail,Callipepla californica,,,"Pheasants, Quails, & Turkeys",GALLIFORMES,3
+66,US, Odontophoridae,Gambel's Quail,Callipepla gambelii,,,"Pheasants, Quails, & Turkeys",GALLIFORMES,3
+67,US, Odontophoridae,Northern Bobwhite,Colinus virginianus,,,"Pheasants, Quails, & Turkeys",GALLIFORMES,3
+68,US, Odontophoridae,Montezuma Quail,Cyrtonyx montezumae,,,"Pheasants, Quails, & Turkeys",GALLIFORMES,3
+69,US, Phasianidae,Himalayan Snowcock,Tetraogallus himalayensis,Introduced species,,"Pheasants, Quails, & Turkeys",GALLIFORMES,4
+70,US, Phasianidae,Chukar,Alectoris chukar,Introduced species,,"Pheasants, Quails, & Turkeys",GALLIFORMES,4
+71,US, Phasianidae,Grey Partridge,Perdix perdix,Introduced species,,"Pheasants, Quails, & Turkeys",GALLIFORMES,4
+72,US, Phasianidae,Ring-necked Pheasant,,,,,GALLIFORMES,4
+73,US, Phasianidae,Indian Peafowl,Pavo cristatus,Introduced species,,"Pheasants, Quails, & Turkeys",GALLIFORMES,4
+74,US, Phasianidae,Spruce Grouse,Falcipennis canadensis,,,"Pheasants, Quails, & Turkeys",GALLIFORMES,4
+75,US, Phasianidae,Rock Ptarmigan,Lagopus mutus,,,"Pheasants, Quails, & Turkeys",GALLIFORMES,4
+76,US, Phasianidae,Sooty Grouse,,,,,GALLIFORMES,4
+77,US, Phasianidae,Willow Ptarmigan,,,,,GALLIFORMES,4
+78,US, Phasianidae,Dusky Grouse,,,,,GALLIFORMES,4
+79,US, Phasianidae,White-tailed Ptarmigan,Lagopus leucurus,,,"Pheasants, Quails, & Turkeys",GALLIFORMES,4
+80,US, Phasianidae,Ruffed Grouse,Bonasa umbellus,,,"Pheasants, Quails, & Turkeys",GALLIFORMES,4
+81,US, Phasianidae,Gunnison Sage-Grouse,,,,,GALLIFORMES,4
+82,US, Phasianidae,Greater Sage-Grouse,Centrocercus urophasianus,,,"Pheasants, Quails, & Turkeys",GALLIFORMES,4
+83,US, Phasianidae,Sharp-tailed Grouse,Tympanuchus phasianellus,,,"Pheasants, Quails, & Turkeys",GALLIFORMES,4
+84,US, Phasianidae,Greater Prairie-chicken,Tympanuchus cupido,,,"Pheasants, Quails, & Turkeys",GALLIFORMES,4
+85,US, Phasianidae,Lesser Prairie-chicken,Tympanuchus pallidicinctus,Endemic,,"Pheasants, Quails, & Turkeys",GALLIFORMES,4
+86,US, Phasianidae,Wild Turkey,Meleagris gallopavo,,,"Pheasants, Quails, & Turkeys",GALLIFORMES,4
+87,US, Gaviidae,Red-throated Loon,Gavia stellata,,,"Wading Birds, Herons & Storks",CICONIIFORMES,5
+88,US, Gaviidae,Arctic Loon,Gavia arctica,,,"Wading Birds, Herons & Storks",CICONIIFORMES,5
+89,US, Gaviidae,Pacific Loon,Gavia pacifica,,,"Wading Birds, Herons & Storks",CICONIIFORMES,5
+90,US, Gaviidae,Common Loon,Gavia immer,,,"Wading Birds, Herons & Storks",CICONIIFORMES,5
+91,US, Gaviidae,Yellow-billed Loon,Gavia adamsii,,,"Wading Birds, Herons & Storks",CICONIIFORMES,5
+92,US, Podicipedidae,Least Grebe,Tachybaptus dominicus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,6
+93,US, Podicipedidae,Pied-billed Grebe,Podilymbus podiceps,,,"Wading Birds, Herons & Storks",CICONIIFORMES,6
+94,US, Podicipedidae,Red-necked Grebe,Podiceps grisegena,,,"Wading Birds, Herons & Storks",CICONIIFORMES,6
+95,US, Podicipedidae,Eared Grebe,,,,,CICONIIFORMES,6
+96,US, Podicipedidae,Horned Grebe,Podiceps auritus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,6
+97,US, Podicipedidae,Western Grebe,Aechmophorus occidentalis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,6
+98,US, Podicipedidae,Clark's Grebe,Aechmophorus clarkii,,,"Wading Birds, Herons & Storks",CICONIIFORMES,6
+99,US, Phoenicopteridae,American Flamingo,Phoenicopterus ruber,,,"Wading Birds, Herons & Storks",CICONIIFORMES,7
+100,US, Diomedeidae,Black-footed Albatross,Diomedea nigripes,,,"Wading Birds, Herons & Storks",CICONIIFORMES,8
+101,US, Diomedeidae,Laysan Albatross,Diomedea immutabilis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,8
+102,US, Diomedeidae,Yellow-nosed Albatross,,,,,CICONIIFORMES,8
+103,US, Diomedeidae,Shy Albatross,,,,,CICONIIFORMES,8
+104,US, Diomedeidae,Black-browed Albatross,,,,,CICONIIFORMES,8
+105,US, Diomedeidae,Short-tailed Albatross,,,,,CICONIIFORMES,8
+106,US, Procellariidae,Northern Fulmar,Fulmarus glacialis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+107,US, Procellariidae,Great-winged Petrel,Pterodroma macroptera,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+108,US, Procellariidae,Fea's Petrel,Pterodroma feae,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+109,US, Procellariidae,Black-capped Petrel,Pterodroma hasitata,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+110,US, Procellariidae,Cory's Shearwater,Calonectris diomedea,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+111,US, Procellariidae,Wedge-tailed Shearwater,Puffinus pacificus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+112,US, Procellariidae,Buller's Shearwater,Puffinus bulleri,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+113,US, Procellariidae,Flesh-footed Shearwater,Puffinus carneipes,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+114,US, Procellariidae,Pink-footed Shearwater,Puffinus creatopus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+115,US, Procellariidae,Great Shearwater,Puffinus gravis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+116,US, Procellariidae,Sooty Shearwater,Puffinus griseus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+117,US, Procellariidae,Short-tailed Shearwater,Puffinus tenuirostris,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+118,US, Procellariidae,Manx Shearwater,Puffinus puffinus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+119,US, Procellariidae,Black-vented Shearwater,Puffinus opisthomelas,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+120,US, Procellariidae,Audubon's Shearwater,Puffinus lherminieri,,,"Wading Birds, Herons & Storks",CICONIIFORMES,9
+121,US, Procellariidae,Herald Petrel,,,,,CICONIIFORMES,9
+122,US, Procellariidae,Murphy's Petrel,,,,,CICONIIFORMES,9
+123,US, Procellariidae,Mottled Petrel,,,,,CICONIIFORMES,9
+124,US, Procellariidae,Bermuda Petrel,,,,,CICONIIFORMES,9
+125,US, Procellariidae,Hawaiian Petrel,,,,,CICONIIFORMES,9
+126,US, Procellariidae,Cook's Petrel,,,,,CICONIIFORMES,9
+127,US, Procellariidae,Bulwer's Petrel,,,,,CICONIIFORMES,9
+128,US, Procellariidae,White-chinned Petrel,,,,,CICONIIFORMES,9
+129,US, Procellariidae,Streaked Shearwater,,,,,CICONIIFORMES,9
+130,US, Procellariidae,Barolo Shearwater,,,,,CICONIIFORMES,9
+131,US, Hydrobatidae,Wilson's Storm-Petrel,Oceanites oceanicus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,10
+132,US, Hydrobatidae,White-faced Storm-Petrel,Pelagodroma marina,,,"Wading Birds, Herons & Storks",CICONIIFORMES,10
+133,US, Hydrobatidae,Least Storm-Petrel,Oceanodroma microsoma,,,"Wading Birds, Herons & Storks",CICONIIFORMES,10
+134,US, Hydrobatidae,Band-rumped Storm-Petrel,Oceanodroma castro,,,"Wading Birds, Herons & Storks",CICONIIFORMES,10
+135,US, Hydrobatidae,Leach's Storm-Petrel,Oceanodroma leucorhoa,,,"Wading Birds, Herons & Storks",CICONIIFORMES,10
+136,US, Hydrobatidae,Black Storm-Petrel,Oceanodroma melania,,,"Wading Birds, Herons & Storks",CICONIIFORMES,10
+137,US, Hydrobatidae,Ashy Storm-Petrel,Oceanodroma homochroa,,,"Wading Birds, Herons & Storks",CICONIIFORMES,10
+138,US, Hydrobatidae,Fork-tailed Storm-Petrel,Oceanodroma furcata,,,"Wading Birds, Herons & Storks",CICONIIFORMES,10
+139,US, Hydrobatidae,European Storm-Petrel,,,,,CICONIIFORMES,10
+140,US, Hydrobatidae,Black-bellied Storm-Petrel,,,,,CICONIIFORMES,10
+141,US, Hydrobatidae,Swinhoe's Storm-Petrel,,,,,CICONIIFORMES,10
+142,US, Hydrobatidae,Wedge-rumped Storm-Petrel,,,,,CICONIIFORMES,10
+143,US, Phaethontidae,Red-billed Tropicbird,Phaethon aethereus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,11
+144,US, Phaethontidae,White-tailed Tropicbird,Phaethon lepturus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,11
+145,US, Phaethontidae,Red-tailed Tropicbird,,,,,CICONIIFORMES,11
+146,US, Ciconiidae,Jabiru,,,,,CICONIIFORMES,12
+147,US, Ciconiidae,Wood Stork,Mycteria americana,,,"Wading Birds, Herons & Storks",CICONIIFORMES,12
+148,US, Fregatidae,Magnificent Frigatebird,Fregata magnificens,,,"Wading Birds, Herons & Storks",CICONIIFORMES,13
+149,US, Fredatidae,Great Frigatebird,,,,,CICONIIFORMES,13
+150,US, Fredatidae,Lesser Frigatebird,,,,,CICONIIFORMES,13
+151,US, Sulidae,Northern Gannet,Morus bassanus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,14
+152,US, Sulidae,Masked Booby,Sula dactylatra,,,"Wading Birds, Herons & Storks",CICONIIFORMES,14
+153,US, Sulidae,Red-footed Booby,Sula sula,,,"Wading Birds, Herons & Storks",CICONIIFORMES,14
+154,US, Sulidae,Brown Booby,Sula leucogaster,,,"Wading Birds, Herons & Storks",CICONIIFORMES,14
+155,US, Sulidae,Blue-footed Booby,,,,,CICONIIFORMES,14
+156,US, Phalacrocoracidae,Brandt's Cormorant,Phalacrocorax penicillatus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,15
+157,US, Phalacrocoracidae,Neotropic Cormorant,Phalacrocorax brasilianus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,15
+158,US, Phalacrocoracidae,Double-crested Cormorant,Phalacrocorax auritus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,15
+159,US, Phalacrocoracidae,Great Cormorant,Phalacrocorax carbo,,,"Wading Birds, Herons & Storks",CICONIIFORMES,15
+160,US, Phalacrocoracidae,Pelagic Cormorant,Phalacrocorax pelagicus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,15
+161,US, Phalacrocoracidae,Red-faced Cormorant,,,,,CICONIIFORMES,15
+162,US, Anhingidae,Anhinga,Anhinga anhinga,,,"Wading Birds, Herons & Storks",CICONIIFORMES,16
+163,US, Pelecanidae,American White Pelican,Pelecanus erythrorhynchos,,,"Wading Birds, Herons & Storks",CICONIIFORMES,17
+164,US, Pelecanidae,Brown Pelican,Pelecanus occidentalis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,17
+165,US, Ardeidae,Least Bittern,Ixobrychus exilis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,18
+166,US, Ardeidae,American Bittern,Botaurus lentiginosus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,18
+167,US, Ardeidae,Yellow-crowned Night-Heron,Nyctanassa violacea,,,"Wading Birds, Herons & Storks",CICONIIFORMES,18
+168,US, Ardeidae,Black-crowned Night-Heron,Nycticorax nycticorax,,,"Wading Birds, Herons & Storks",CICONIIFORMES,18
+169,US, Ardeidae,Reddish Egret,Egretta rufescens,,,"Wading Birds, Herons & Storks",CICONIIFORMES,18
+170,US, Ardeidae,Tricolored Heron,Egretta tricolor,,,"Wading Birds, Herons & Storks",CICONIIFORMES,18
+171,US, Ardeidae,Little Blue Heron,Egretta caerulea,,,"Wading Birds, Herons & Storks",CICONIIFORMES,18
+172,US, Ardeidae,Little Egret,Egretta garzetta,,,"Wading Birds, Herons & Storks",CICONIIFORMES,18
+173,US, Ardeidae,Snowy Egret,Egretta thula,,,"Wading Birds, Herons & Storks",CICONIIFORMES,18
+174,US, Ardeidae,Great Blue Heron,Ardea herodias,,,"Wading Birds, Herons & Storks",CICONIIFORMES,18
+175,US, Ardeidae,Great Egret,Ardea alba,,,"Wading Birds, Herons & Storks",CICONIIFORMES,18
+176,US, Ardeidae,Cattle Egret,Bubulcus ibis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,18
+177,US, Ardeidae,Green Heron,Butorides virescens,,,"Wading Birds, Herons & Storks",CICONIIFORMES,18
+178,US, Ardeidae,Gray Heron,,,,,CICONIIFORMES,18
+179,US, Ardeidae,Western Reef-Heron,,,,,CICONIIFORMES,18
+180,US, Threskiornithidae,White Ibis,Eudocimus albus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,19
+181,US, Threskiornithidae,Glossy Ibis,Plegadis falcinellus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,19
+182,US, Threskiornithidae,White-faced Ibis,Plegadis chihi,,,"Wading Birds, Herons & Storks",CICONIIFORMES,19
+183,US, Threskiornithidae,Roseate Spoonbill,Ajaia ajaja,,,"Wading Birds, Herons & Storks",CICONIIFORMES,19
+184,US, Threskiornithidae,Scarlet Ibis,,,,,CICONIIFORMES,19
+185,US, Cathartidae,Black Vulture,Coragyps atratus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,20
+186,US, Cathartidae,Turkey Vulture,Cathartes aura,,,"Wading Birds, Herons & Storks",CICONIIFORMES,20
+187,US, Cathartidae,California Condor,Gymnogyps californianus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,20
+188,US, Pandionidae,Osprey,Pandion haliaetus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,21
+189,US, Accipitridae,Hook-billed Kite,Chondrohierax uncinatus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+190,US, Accipitridae,Swallow-tailed Kite,Elanoides forficatus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+191,US, Accipitridae,White-tailed Kite,Elanus leucurus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+192,US, Accipitridae,Snail Kite,Rostrhamus sociabilis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+193,US, Accipitridae,Mississippi Kite,Ictinia mississippiensis,Breeding endemic,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+194,US, Accipitridae,Bald Eagle,Haliaeetus leucocephalus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+195,US, Accipitridae,Northern Harrier,Circus hudsonius,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+196,US, Accipitridae,Sharp-shinned Hawk,Accipiter striatus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+197,US, Accipitridae,Cooper's Hawk,Accipiter cooperii,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+198,US, Accipitridae,Northern Goshawk,Accipiter gentilis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+199,US, Accipitridae,Common Black-Hawk,Buteogallus anthracinus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+200,US, Accipitridae,Harris's Hawk,Parabuteo unicinctus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+201,US, Accipitridae,Grey Hawk,Buteo plagiatus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+202,US, Accipitridae,Red-shouldered Hawk,Buteo lineatus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+203,US, Accipitridae,Broad-winged Hawk,Buteo platypterus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+204,US, Accipitridae,Short-tailed Hawk,Buteo brachyurus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+205,US, Accipitridae,Swainson's Hawk,Buteo swainsoni,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+206,US, Accipitridae,White-tailed Hawk,Buteo albicaudatus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+207,US, Accipitridae,Zone-tailed Hawk,Buteo albonotatus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+208,US, Accipitridae,Red-tailed Hawk,Buteo jamaicensis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+209,US, Accipitridae,Ferruginous Hawk,Buteo regalis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+210,US, Accipitridae,Rough-legged Hawk,Buteo lagopus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+211,US, Accipitridae,Golden Eagle,Aquila chrysaetos,,,"Wading Birds, Herons & Storks",CICONIIFORMES,22
+212,US, Accipitridae,Roadside Hawk,,,,,CICONIIFORMES,22
+213,US, Rallidae,Yellow Rail,Coturnicops noveboracensis,,,"Waterfowl, Cranes, & Rails",GRUIFORMES,23
+214,US, Rallidae,Black Rail,Laterallus jamaicensis,,,"Waterfowl, Cranes, & Rails",GRUIFORMES,23
+215,US, Rallidae,Clapper Rail,Rallus longirostris,,,"Waterfowl, Cranes, & Rails",GRUIFORMES,23
+216,US, Rallidae,King Rail,Rallus elegans,,,"Waterfowl, Cranes, & Rails",GRUIFORMES,23
+217,US, Rallidae,Virginia Rail,Rallus limicola,,,"Waterfowl, Cranes, & Rails",GRUIFORMES,23
+218,US, Rallidae,Sora,Porzana carolina,,,"Waterfowl, Cranes, & Rails",GRUIFORMES,23
+219,US, Rallidae,Purple Swamphen,Porphyrio porphyrio,Introduced species,,"Waterfowl, Cranes, & Rails",GRUIFORMES,23
+220,US, Rallidae,Purple Gallinule,Porphyrio martinicus,,,"Waterfowl, Cranes, & Rails",GRUIFORMES,23
+221,US, Rallidae,Common Gallinule,Gallinula chloropus,,,"Waterfowl, Cranes, & Rails",GRUIFORMES,23
+222,US, Rallidae,American Coot,Fulica americana,,,"Waterfowl, Cranes, & Rails",GRUIFORMES,23
+223,US, Aramidae,Limpkin,Aramus guarauna,,,"Waterfowl, Cranes, & Rails",GRUIFORMES,24
+224,US, Gruidae,Sandhill Crane,Grus canadensis,,,"Waterfowl, Cranes, & Rails",GRUIFORMES,25
+225,US, Gruidae,Whooping Crane,Grus americana,,,"Waterfowl, Cranes, & Rails",GRUIFORMES,25
+226,US, Gruidae,Common Crane,,,,,GRUIFORMES,25
+227,US, Recurvirostridae,Black-necked Stilt,Himantopus mexicanus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,26
+228,US, Recurvirostridae,American Avocet,Recurvirostra americana,,,"Wading Birds, Herons & Storks",CICONIIFORMES,26
+229,US, Haematopodidae,Black Oystercatcher,Haematopus bachmani,,,"Wading Birds, Herons & Storks",CICONIIFORMES,27
+230,US, Haematopodidae,American Oystercatcher,Haematopus palliatus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,27
+231,US, Haematopodidae,Eurasian Oystercatcher,,,,,CICONIIFORMES,27
+232,US, Charadriidae,European Golden-Plover,Pluvialis apricaria,,,"Wading Birds, Herons & Storks",CICONIIFORMES,28
+233,US, Charadriidae,Pacific Golden-Plover,Pluvialis fulva,,,"Wading Birds, Herons & Storks",CICONIIFORMES,28
+234,US, Charadriidae,American Golden-Plover,Pluvialis dominica,,,"Wading Birds, Herons & Storks",CICONIIFORMES,28
+235,US, Charadriidae,Common Ringed Plover,Charadrius hiaticula,,,"Wading Birds, Herons & Storks",CICONIIFORMES,28
+236,US, Charadriidae,Semipalmated Plover,Charadrius semipalmatus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,28
+237,US, Charadriidae,Wilson's Plover,Charadrius wilsonia,,,"Wading Birds, Herons & Storks",CICONIIFORMES,28
+238,US, Charadriidae,Killdeer,Charadrius vociferus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,28
+239,US, Charadriidae,Piping Plover,Charadrius melodus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,28
+240,US, Charadriidae,Mountain Plover,Charadrius montanus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,28
+241,US, Charadriidae,Northern Lapwing,,,,,CHARADRIFORMES,28
+242,US, Charadriidae,Black-bellied Plover,,,,,CHARADRIFORMES,28
+243,US, Charadriidae,Lesser Sand-Plover,,,,,CHARADRIFORMES,28
+244,US, Charadriidae,Greater Sand-Plover,,,,,CHARADRIFORMES,28
+245,US, Charadriidae,Snowy Plover,,,,,CHARADRIFORMES,28
+246,US, Charadriidae,Eurasian Dotteral,,,,,CHARADRIFORMES,28
+247,US, Jacanidae,Northern Jacana,Jacana spinosa,,,"Wading Birds, Herons & Storks",CICONIIFORMES,29
+248,US, Scolopacidae,American Woodcock,Scolopax minor,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+249,US, Scolopacidae,Baird's Sandpiper,Calidris bairdii,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+250,US, Scolopacidae,Black Turnstone,Arenaria melanocephala,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+251,US, Scolopacidae,Buff-breasted Sandpiper,Tryngites subruficollis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+252,US, Scolopacidae,Common Snipe,Gallinago gallinago,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+253,US, Scolopacidae,Dunlin,Calidris alpina,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+254,US, Scolopacidae,Great Knot,Calidris tenuirostris,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+255,US, Scolopacidae,Greater Yellowlegs,Tringa melanoleuca,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+256,US, Scolopacidae,Hudsonian Godwit,Limosa haemastica,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+257,US, Scolopacidae,Least Sandpiper,Calidris minutilla,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+258,US, Scolopacidae,Lesser Yellowlegs,Tringa flavipes,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+259,US, Scolopacidae,Long-billed Curlew,Numenius americanus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+260,US, Scolopacidae,Long-billed Dowitcher,Limnodromus scolopaceus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+261,US, Scolopacidae,Marbled Godwit,Limosa fedoa,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+262,US, Scolopacidae,Pectoral Sandpiper,Calidris melanotos,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+263,US, Scolopacidae,Purple Sandpiper,Calidris maritima,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+264,US, Scolopacidae,Red Knot,Calidris canutus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+265,US, Scolopacidae,Red Phalarope,Phalaropus fulicaria,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+266,US, Scolopacidae,Red-necked Phalarope,Phalaropus lobatus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+267,US, Scolopacidae,Rock Sandpiper,Calidris ptilocnemis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+268,US, Scolopacidae,Ruddy Turnstone,Arenaria interpres,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+269,US, Scolopacidae,Ruff,Philomachus pugnax,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+270,US, Scolopacidae,Sanderling,Calidris alba,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+271,US, Scolopacidae,Semipalmated Sandpiper,Calidris pusilla,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+272,US, Scolopacidae,Short-billed Dowitcher,Limnodromus griseus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+273,US, Scolopacidae,Solitary Sandpiper,Tringa solitaria,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+274,US, Scolopacidae,Spotted Sandpiper,Tringa macularia,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+275,US, Scolopacidae,Stilt Sandpiper,Micropalama himantopus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+276,US, Scolopacidae,Surfbird,Aphriza virgata,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+277,US, Scolopacidae,Terek Sandpiper,,,,,CHARADRIFORMES,30
+278,US, Scolopacidae,Upland Sandpiper,Bartramia longicauda,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+279,US, Scolopacidae,Wandering Tattler,Tringa incana,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+280,US, Scolopacidae,Western Sandpiper,Calidris mauri,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+281,US, Scolopacidae,White-rumped Sandpiper,Calidris fuscicollis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+282,US, Scolopacidae,Willet,Catoptrophorus semipalmatus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+283,US, Scolopacidae,Wilson's Phalarope,Phalaropus tricolor,,,"Wading Birds, Herons & Storks",CICONIIFORMES,30
+284,US, Scolopacidae,Common Sandpiper,,,,,CHARADRIFORMES,30
+285,US, Scolopacidae,Gray-tailed Tattler,,,,,CHARADRIFORMES,30
+286,US, Scolopacidae,Spotted Redshank,,,,,CHARADRIFORMES,30
+287,US, Scolopacidae,Common Greenshank,,,,,CHARADRIFORMES,30
+288,US, Scolopacidae,Wood Sandpiper,,,,,CHARADRIFORMES,30
+289,US, Scolopacidae,Little Curlew,,,,,CHARADRIFORMES,30
+290,US, Scolopacidae,Whimbrel,,,,,CHARADRIFORMES,30
+291,US, Scolopacidae,Bristle-thighed Curlew,,,,,CHARADRIFORMES,30
+292,US, Scolopacidae,Black-tailed Godwit,,,,,CHARADRIFORMES,30
+293,US, Scolopacidae,Bar-tailed Godwit,,,,,CHARADRIFORMES,30
+294,US, Scolopacidae,Sharp-tailed Sandpiper,,,,,CHARADRIFORMES,30
+295,US, Scolopacidae,Curlew Sandpiper,,,,,CHARADRIFORMES,30
+296,US, Scolopacidae,Temminck's Stint,,,,,CHARADRIFORMES,30
+297,US, Scolopacidae,Long-toed Stint,,,,,CHARADRIFORMES,30
+298,US, Scolopacidae,Red-necked Stint,,,,,CHARADRIFORMES,30
+299,US, Scolopacidae,Little Stint,,,,,CHARADRIFORMES,30
+300,US, Scolopacidae,Jack Snipe,,,,,CHARADRIFORMES,30
+301,US, Scolopacidae,Wilson's Snipe,,,,,CHARADRIFORMES,30
+302,US, Stercorariidae,Long-tailed Jaeger,Stercorarius longicaudus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,31
+303,US, Stercorariidae,Parasitic Jaeger,Stercorarius parasiticus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,31
+304,US, Stercorariidae,Pomarine Jaeger,Stercorarius pomarinus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,31
+305,US, Stercorariidae,Great Skua,Stercorarius skua,,,"Wading Birds, Herons & Storks",CICONIIFORMES,31
+306,US, Stercorariidae,South Polar Skua,Stercorarius maccormicki,,,"Wading Birds, Herons & Storks",CICONIIFORMES,31
+307,US, Alcidae,Atlantic Puffin,Fratercula arctica,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+308,US, Alcidae,Horned Puffin,Fratercula corniculata,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+309,US, Alcidae,Tufted Puffin,Fratercula cirrhata,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+310,US, Alcidae,Black Guillemot,Cepphus grylle,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+311,US, Alcidae,Marbled Murrelet,Brachyramphus marmoratus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+312,US, Alcidae,Pigeon Guillemot,Cepphus columba,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+313,US, Alcidae,Razorbill,Alca torda,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+314,US, Alcidae,Rhinoceros Auklet,Cerorhinca monocerata,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+315,US, Alcidae,Long-billed Murrelet,,,,,,32
+316,US, Alcidae,Kittlitz's Murrelet,,,,,,32
+317,US, Alcidae,Scripps's Murrelet,,,,,,32
+318,US, Alcidae,Guadalupe Murrelet,,,,,,32
+319,US, Alcidae,Least Auklet,,,,,,32
+320,US, Alcidae,Whiskered Auklet,,,,,,32
+321,US, Alcidae,Crested Auklet,,,,,,32
+322,US, Alcidae,Ancient Murrelet,Synthliboramphus antiquus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+323,US, Alcidae,Cassin's Auklet,Ptychoramphus aleuticus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+324,US, Alcidae,Craveri's Murrelet,Synthliboramphus craveri,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+325,US, Alcidae,Parakeet Auklet,Cyclorrhynchus psittacula,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+326,US, Alcidae,Dovekie,Alle alle,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+327,US, Alcidae,Common Murre,Uria aalge,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+328,US, Alcidae,Thick-billed Murre,Uria lomvia,,,"Wading Birds, Herons & Storks",CICONIIFORMES,32
+329,US, Alcidae,Dovekie,,,,,,32
+330,US, Laridae,Arctic Tern,Sterna paradisaea,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+331,US, Laridae,Black Noddy,Anous minutus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+332,US, Laridae,Black Skimmer,Rynchops niger,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+333,US, Laridae,Black Tern,Chlidonias niger,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+334,US, Laridae,Black-headed Gull,Larus ridibundus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+335,US, Laridae,Black-legged Kittiwake,Rissa tridactyla,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+336,US, Laridae,Bonaparte's Gull,Larus philadelphia,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+337,US, Laridae,Bridled Tern,Sterna anaethetus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+338,US, Laridae,Brown Noddy,Anous stolidus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+339,US, Laridae,California Gull,Larus californicus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+340,US, Laridae,Caspian Tern,Sterna caspia,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+341,US, Laridae,Common Tern,Sterna hirundo,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+342,US, Laridae,Elegant Tern,Sterna elegans,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+343,US, Laridae,Forster's Tern,Sterna forsteri,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+344,US, Laridae,Franklin's Gull,Larus pipixcan,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+345,US, Laridae,Glaucous Gull,Larus hyperboreus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+346,US, Laridae,Glaucous-winged Gull,Larus glaucescens,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+347,US, Laridae,Great Black-backed Gull,Larus marinus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+348,US, Laridae,Gull-billed Tern,Sterna nilotica,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+349,US, Laridae,Heermann's Gull,Larus heermanni,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+350,US, Laridae,Herring Gull,Larus argentatus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+351,US, Laridae,Iceland Gull,Larus glaucoides,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+352,US, Laridae,Ivory Gull,Pagophila eburnea,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+353,US, Laridae,Kelp Gull,Larus dominicanus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+354,US, Laridae,Laughing Gull,Larus atricilla,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+355,US, Laridae,Least Tern,Sterna antillarum,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+356,US, Laridae,Lesser Black-backed Gull,Larus fuscus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+357,US, Laridae,Little Gull,Larus minutus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+358,US, Laridae,Mew Gull,Larus brachyrhynchus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+359,US, Laridae,Ring-billed Gull,Larus delawarensis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+360,US, Laridae,Roseate Tern,Sterna dougallii,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+361,US, Laridae,Royal Tern,Sterna maxima,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+362,US, Laridae,Sabine's Gull,Xema sabini,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+363,US, Laridae,Sandwich Tern,Sterna sandvicensis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+364,US, Laridae,Sooty Tern,Sterna fuscata,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+365,US, Laridae,Western Gull,Larus occidentalis,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+366,US, Laridae,Yellow-footed Gull,Larus livens,,,"Wading Birds, Herons & Storks",CICONIIFORMES,33
+367,US, Laridae,Red-legged Kittiwake,,,,,,33
+368,US, Laridae,Ross's Gull,,,,,,33
+369,US, Laridae,Black-tailed Gull,,,,,,33
+370,US, Laridae,Yellow-legged Gull,,,,,,33
+371,US, Laridae,Thayer's Gull,,,,,,33
+372,US, Laridae,Slaty Gull,,,,,,33
+373,US, Laridae,Aleutian Tern,,,,,,33
+374,US, Laridae,White-winged Tern,,,,,,33
+375,US, Columbidae,Rock Pigeon,Columba livia,Introduced species,,"Pigeons, Doves, & Dodo Birds",COLUMBIFORMES,34
+376,US, Columbidae,White-crowned Pigeon,Columba leucocephala,,,"Pigeons, Doves, & Dodo Birds",COLUMBIFORMES,34
+377,US, Columbidae,Red-billed Pigeon,Columba flavirostris,,,"Pigeons, Doves, & Dodo Birds",COLUMBIFORMES,34
+378,US, Columbidae,Spotted Dove,Streptopelia chinensis,Introduced species,,"Pigeons, Doves, & Dodo Birds",COLUMBIFORMES,34
+379,US, Columbidae,Eurasian Collared-Dove,Streptopelia decaocto,Introduced species,,"Pigeons, Doves, & Dodo Birds",COLUMBIFORMES,34
+380,US, Columbidae,Mourning Dove,Zenaida macroura,,,"Pigeons, Doves, & Dodo Birds",COLUMBIFORMES,34
+381,US, Columbidae,Zenaida Dove,Zenaida aurita,,,"Pigeons, Doves, & Dodo Birds",COLUMBIFORMES,34
+382,US, Columbidae,White-winged Dove,Zenaida asiatica,,,"Pigeons, Doves, & Dodo Birds",COLUMBIFORMES,34
+383,US, Columbidae,Inca Dove,Columbina inca,,,"Pigeons, Doves, & Dodo Birds",COLUMBIFORMES,34
+384,US, Columbidae,Common Ground-Dove,Columbina passerina,,,"Pigeons, Doves, & Dodo Birds",COLUMBIFORMES,34
+385,US, Columbidae,White-tipped Dove,Leptotila verreauxi,,,"Pigeons, Doves, & Dodo Birds",COLUMBIFORMES,34
+386,US, Columbidae,Band-tailed Pigeon,,,,,COLUMBIFORMES,34
+387,US, Columbidae,Oriental Turtle-Dove,,,,,COLUMBIFORMES,34
+388,US, Columbidae,European Turtle-Dove,,,,,COLUMBIFORMES,34
+389,US, Columbidae,Ruddy Ground-Dove,,,,,COLUMBIFORMES,34
+390,US, Columbidae,Key West Quail-Dove,,,,,COLUMBIFORMES,34
+391,US, Cuculidae,Black-billed Cuckoo,Coccyzus erythropthalmus,,,"Cuckoos, Roadrunners, & Relatives",CUCULIFORMES,35
+392,US, Cuculidae,Yellow-billed Cuckoo,Coccyzus americanus,,,"Cuckoos, Roadrunners, & Relatives",CUCULIFORMES,35
+393,US, Cuculidae,Mangrove Cuckoo,Coccyzus minor,,,"Cuckoos, Roadrunners, & Relatives",CUCULIFORMES,35
+394,US, Cuculidae,Smooth-billed Ani,Crotophaga ani,,,"Cuckoos, Roadrunners, & Relatives",CUCULIFORMES,35
+395,US, Cuculidae,Groove-billed Ani,Crotophaga sulcirostris,,,"Cuckoos, Roadrunners, & Relatives",CUCULIFORMES,35
+396,US, Cuculidae,Greater Roadrunner,Geococcyx californianus,,,"Cuckoos, Roadrunners, & Relatives",CUCULIFORMES,35
+397,US, Cuculidae,Common Cuckoo,,,,,CUCULIFORMES,35
+398,US, Tytonidae,Barn Owl,Tyto alba,,,Owls,STRIGIFORMES,36
+399,US, Strigidae,Flammulated Owl,Otus flammeolus,,,Owls,STRIGIFORMES,37
+400,US, Strigidae,Western Screech-Owl,Otus kennicottii,,,Owls,STRIGIFORMES,37
+401,US, Strigidae,Eastern Screech-Owl,Otus asio,,,Owls,STRIGIFORMES,37
+402,US, Strigidae,Whiskered Screech-Owl,Otus trichopsis,,,Owls,STRIGIFORMES,37
+403,US, Strigidae,Great Horned Owl,Bubo virginianus,,,Owls,STRIGIFORMES,37
+404,US, Strigidae,Snowy Owl,Nyctea scandiaca,,,Owls,STRIGIFORMES,37
+405,US, Strigidae,Spotted Owl,Strix occidentalis,,,Owls,STRIGIFORMES,37
+406,US, Strigidae,Barred Owl,Strix varia,,,Owls,STRIGIFORMES,37
+407,US, Strigidae,Great Grey Owl,Strix nebulosa,,,Owls,STRIGIFORMES,37
+408,US, Strigidae,Northern Hawk Owl,Surnia ulula,,,Owls,STRIGIFORMES,37
+409,US, Strigidae,Northern Pygmy-Owl,Glaucidium californicum,,,Owls,STRIGIFORMES,37
+410,US, Strigidae,Ferruginous Pygmy-Owl,Glaucidium brasilianum,,,Owls,STRIGIFORMES,37
+411,US, Strigidae,Elf Owl,Micrathene whitneyi,,,Owls,STRIGIFORMES,37
+412,US, Strigidae,Burrowing Owl,Speotyto cunicularia,,,Owls,STRIGIFORMES,37
+413,US, Strigidae,Boreal Owl,Aegolius funereus,,,Owls,STRIGIFORMES,37
+414,US, Strigidae,Saw-whet Owl,Aegolius acadicus,,,Owls,STRIGIFORMES,37
+415,US, Strigidae,Long-eared Owl,Asio otus,,,Owls,STRIGIFORMES,37
+416,US, Strigidae,Short-eared Owl,Asio flammeus,,,Owls,STRIGIFORMES,37
+417,US, Caprimulgidae,Lesser Nighthawk,Chordeiles acutipennis,,,Owls,STRIGIFORMES,38
+418,US, Caprimulgidae,Common Nighthawk,Chordeiles minor,,,Owls,STRIGIFORMES,38
+419,US, Caprimulgidae,Antillean Nighthawk,Chordeiles gundlachii,,,Owls,STRIGIFORMES,38
+420,US, Caprimulgidae,Common Pauraque,Nyctidromus albicollis,,,Owls,STRIGIFORMES,38
+421,US, Caprimulgidae,Common Poorwill,Phalaenoptilus nuttallii,,,Owls,STRIGIFORMES,38
+422,US, Caprimulgidae,Chuck-will's-widow,Caprimulgus carolinensis,,,Owls,STRIGIFORMES,38
+423,US, Caprimulgidae,Buff-collared Nightjar,Caprimulgus ridgwayi,,,Owls,STRIGIFORMES,38
+424,US, Caprimulgidae,Eastern Whip-poor-will,Caprimulgus vociferus,,,Owls,STRIGIFORMES,38
+425,US, Caprimulgidae,Mexican Whip-poor-will,,,,,STRIGIFORMES,38
+426,US, Apodidae,Black Swift,Cypseloides niger,,,"Hummingbirds, Swifts, & Tree Swallows",APODIFORMES,39
+427,US, Apodidae,Chimney Swift,Chaetura pelagica,,,"Hummingbirds, Swifts, & Tree Swallows",APODIFORMES,39
+428,US, Apodidae,Vaux's Swift,Chaetura vauxi,,,"Hummingbirds, Swifts, & Tree Swallows",APODIFORMES,39
+429,US, Apodidae,White-throated Swift,Aeronautes saxatalis,,,"Hummingbirds, Swifts, & Tree Swallows",APODIFORMES,39
+430,US, Apodidae,White-collared Swift,,,,,APODIFORMES,39
+431,US, Apodidae,Common Swift,,,,,APODIFORMES,39
+432,US, Apodidae,Fork-tailed Swift,,,,,APODIFORMES,39
+433,US, Trochilidae,Allen's Hummingbird,Selasphorus sasin,Breeding endemic,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+434,US, Trochilidae,Anna's Hummingbird,Calypte anna,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+435,US, Trochilidae,Berylline Hummingbird,Amazilia beryllina,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+436,US, Trochilidae,Black-chinned Hummingbird,Archilochus alexandri,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+437,US, Trochilidae,Blue-throated Hummingbird,Lampornis clemenciae,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+438,US, Trochilidae,Broad-billed Hummingbird,Cynanthus latirostris,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+439,US, Trochilidae,Broad-tailed Hummingbird,Selasphorus platycercus,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+440,US, Trochilidae,Buff-bellied Hummingbird,Amazilia yucatanensis,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+441,US, Trochilidae,Calliope Hummingbird,Stellula calliope,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+442,US, Trochilidae,Costa's Hummingbird,Calypte costae,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+443,US, Trochilidae,Lucifer Hummingbird,Calothorax lucifer,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+444,US, Trochilidae,Magnificent Hummingbird,Eugenes fulgens,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+445,US, Trochilidae,Ruby-throated Hummingbird,Archilochus colubris,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+446,US, Trochilidae,Rufous Hummingbird,Selasphorus rufus,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+447,US, Trochilidae,Violet-crowned Hummingbird,Amazilia violiceps,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+448,US, Trochilidae,White-eared Hummingbird,Hylocharis leucotis,,,"Hummingbirds, Swifts, & Tree Swallows",TROCHILIFORMES,40
+449,US, Trochilidae,Green Violetear,,,,,TROCHILIFORMES,40
+450,US, Trochilidae,Green-breasted Mango,,,,,TROCHILIFORMES,40
+451,US, Trochilidae,Plain-capped Starthroat,,,,,TROCHILIFORMES,40
+452,US, Trogonidae,Elegant Trogon,Trogon elegans,,,Trogons & Quetzals,TROGONIFORMES,41
+453,US, Trogonidae,Eared Quetzal,,,,,TROGONIFORMES,41
+454,US, Alcedinidae,Belted Kingfisher,Megaceryle alcyon,,,"Kingfishers, Rollers, & Bee-eaters",CORACIIFORMES,42
+455,US, Alcedinidae,Ringed Kingfisher,Megaceryle torquata,,,"Kingfishers, Rollers, & Bee-eaters",CORACIIFORMES,42
+456,US, Alcedinidae,Green Kingfisher,Chloroceryle americana,,,"Kingfishers, Rollers, & Bee-eaters",CORACIIFORMES,42
+457,US, Picidae,Lewis's Woodpecker,Melanerpes lewis,,,Woodpeckers & Relatives,PICIFORMES,43
+458,US, Picidae,Red-headed Woodpecker,Melanerpes erythrocephalus,,,Woodpeckers & Relatives,PICIFORMES,43
+459,US, Picidae,Acorn Woodpecker,Melanerpes formicivorus,,,Woodpeckers & Relatives,PICIFORMES,43
+460,US, Picidae,Gila Woodpecker,Melanerpes uropygialis,,,Woodpeckers & Relatives,PICIFORMES,43
+461,US, Picidae,Red-bellied Woodpecker,Melanerpes carolinus,,,Woodpeckers & Relatives,PICIFORMES,43
+462,US, Picidae,Golden-fronted Woodpecker,Melanerpes aurifrons,,,Woodpeckers & Relatives,PICIFORMES,43
+463,US, Picidae,Yellow-bellied Sapsucker,Sphyrapicus varius,,,Woodpeckers & Relatives,PICIFORMES,43
+464,US, Picidae,Red-naped Sapsucker,Sphyrapicus nuchalis,,,Woodpeckers & Relatives,PICIFORMES,43
+465,US, Picidae,Red-breasted Sapsucker,Sphyrapicus ruber,,,Woodpeckers & Relatives,PICIFORMES,43
+466,US, Picidae,Williamson's Sapsucker,Sphyrapicus thyroideus,,,Woodpeckers & Relatives,PICIFORMES,43
+467,US, Picidae,Nuttall's Woodpecker,Picoides nuttallii,,,Woodpeckers & Relatives,PICIFORMES,43
+468,US, Picidae,Ladder-backed Woodpecker,Picoides scalaris,,,Woodpeckers & Relatives,PICIFORMES,43
+469,US, Picidae,Downy Woodpecker,Picoides pubescens,,,Woodpeckers & Relatives,PICIFORMES,43
+470,US, Picidae,Red-cockaded Woodpecker,Picoides borealis,Endemic,,Woodpeckers & Relatives,PICIFORMES,43
+471,US, Picidae,Strickland's Woodpecker,Picoides stricklandi,,,Woodpeckers & Relatives,PICIFORMES,43
+472,US, Picidae,Hairy Woodpecker,Picoides villosus,,,Woodpeckers & Relatives,PICIFORMES,43
+473,US, Picidae,White-headed Woodpecker,Picoides albolarvatus,,,Woodpeckers & Relatives,PICIFORMES,43
+474,US, Picidae,American Three-toed Woodpecker,Picoides dorsalis,,,Woodpeckers & Relatives,PICIFORMES,43
+475,US, Picidae,Black-backed Woodpecker,Picoides arcticus,,,Woodpeckers & Relatives,PICIFORMES,43
+476,US, Picidae,Northern Flicker,Colaptes auratus,,,Woodpeckers & Relatives,PICIFORMES,43
+477,US, Picidae,Gilded Flicker,Colaptes chrysoides,,,Woodpeckers & Relatives,PICIFORMES,43
+478,US, Picidae,Pileated Woodpecker,Dryocopus pileatus,,,Woodpeckers & Relatives,PICIFORMES,43
+479,US, Picidae,Ivory-billed Woodpecker,Campephilus principalis,,,Woodpeckers & Relatives,PICIFORMES,43
+480,US, Falconidae,Crested Caracara,Caracara cheriway,,,"Wading Birds, Herons & Storks",CICONIIFORMES,44
+481,US, Falconidae,American Kestrel,Falco sparverius,,,"Wading Birds, Herons & Storks",CICONIIFORMES,44
+482,US, Falconidae,Merlin,Falco columbarius,,,"Wading Birds, Herons & Storks",CICONIIFORMES,44
+483,US, Falconidae,Gyrfalcon,Falco rusticolus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,44
+484,US, Falconidae,Prairie Falcon,Falco mexicanus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,44
+485,US, Falconidae,Peregrine Falcon,Falco peregrinus,,,"Wading Birds, Herons & Storks",CICONIIFORMES,44
+486,US, Falconidae,Eurasian Hobby,,,,,CICONIIFORMES,44
+487,US, Falconidae,Aplomado Falcon,,,,,CICONIIFORMES,44
+488,US, Falconidae,Eurasian Kestrel,,,,,CICONIIFORMES,44
+489,US, Psittacidae,﻿﻿Budgerigar,,,,,,45
+490,US, Psittacidae,﻿﻿Rosy-faced Lovebird,,,,,,45
+491,US, Psittacidae,﻿﻿Rose-ringed Parakeet,,,,,,45
+492,US, Psittacidae,﻿﻿Monk Parakeet,,,,,,45
+493,US, Psittacidae,﻿﻿Carolina Parakeett,,,,,,45
+494,US, Psittacidae,﻿﻿Blue-crowned Parakeet,,,,,,45
+495,US, Psittacidae,﻿﻿Green Parakeet,,,,,,45
+496,US, Psittacidae,﻿﻿Red-masked Parakeet,,,,,,45
+497,US, Psittacidae,﻿﻿White-eyed Parakeet,,,,,,45
+498,US, Psittacidae,﻿﻿Mitred Parakeet,,,,,,45
+499,US, Psittacidae,﻿﻿Dusky-headed Parakeet,,,,,,45
+500,US, Psittacidae,﻿﻿Black-hooded Parakeet,,,,,,45
+501,US, Psittacidae,﻿﻿Chestnut-fronted Macaw,,,,,,45
+502,US, Psittacidae,﻿﻿Blue-and-Yellow Macaw,,,,,,45
+503,US, Psittacidae,﻿﻿Thick-billed Parrot,,,,,,45
+504,US, Psittacidae,﻿﻿White-winged Parakeet,,,,,,45
+505,US, Psittacidae,﻿﻿Yellow-chevroned Parakeet,,,,,,45
+506,US, Psittacidae,﻿﻿White-fronted Parrot,,,,,,45
+507,US, Psittacidae,﻿﻿Red-crowned Parrot,,,,,,45
+508,US, Psittacidae,Lilac-crowned Parrot,Melopsittacus undulatus,Extirpated,,Parrots,,45
+509,US, Psittacidae,﻿﻿Red-lored Parrot,Agapornis roseicollis,Introduced species,,Parrots,,45
+510,US, Psittacidae,﻿﻿Orange-winged Parrot,Psittacula krameri,Introduced species,,Parrots,,45
+511,US, Psittacidae,﻿﻿Blue-fronted Parrot,Aratinga mitrata,Introduced species,,Parrots,,45
+512,US, Psittacidae,﻿﻿Mealy Parrot,Aratinga erythrogenys,Introduced species,,Parrots,,45
+513,US, Psittacidae,﻿﻿Yellow-headed Parrot,Nandayus nenday,Introduced species,,Parrots,,45
+514,US, Psittacidae,﻿﻿Yellow-naped Parrot,Myiopsitta monachus,Introduced species,,Parrots,,45
+515,US, Psittacidae,﻿﻿Yellow-crowned Parrot,Brotogeris versicolurus,Introduced species,,Parrots,,45
+516,US, Tyrannidae,Northern Beardless- Tyrannulet,Camptostoma imberbe,,,Perching Birds,PASSERIFORMES,46
+517,US, Tyrannidae,﻿﻿White-crested Elaenia,Contopus virens,,,Perching Birds,PASSERIFORMES,46
+518,US, Tyrannidae,﻿﻿Tufted Flycatcher,Empidonax flaviventris,,,Perching Birds,PASSERIFORMES,46
+519,US, Tyrannidae,﻿﻿Olive-sided Flycatcher,Empidonax virescens,,,Perching Birds,PASSERIFORMES,46
+520,US, Tyrannidae,﻿﻿Greater Pewee,Empidonax alnorum,,,Perching Birds,PASSERIFORMES,46
+521,US, Tyrannidae,﻿﻿Western Wood-Pewee,Empidonax traillii,,,Perching Birds,PASSERIFORMES,46
+522,US, Tyrannidae,﻿﻿Eastern Wood-Pewee,Empidonax minimus,,,Perching Birds,PASSERIFORMES,46
+523,US, Tyrannidae,﻿﻿Cuban Pewee,Empidonax hammondii,,,Perching Birds,PASSERIFORMES,46
+524,US, Tyrannidae,﻿﻿Yellow-bellied Flycatcher,Empidonax wrightii,Breeding endemic,,Perching Birds,PASSERIFORMES,46
+525,US, Tyrannidae,﻿﻿Acadian Flycatcher,Empidonax oberholseri,,,Perching Birds,PASSERIFORMES,46
+526,US, Tyrannidae,﻿﻿Alder Flycatcher,Empidonax difficilis,,,Perching Birds,PASSERIFORMES,46
+527,US, Tyrannidae,﻿﻿Willow Flycatcher,Empidonax occidentalis,,,Perching Birds,PASSERIFORMES,46
+528,US, Tyrannidae,﻿﻿Least Flycatcher,Empidonax fulvifrons,,,Perching Birds,PASSERIFORMES,46
+529,US, Tyrannidae,﻿﻿Hammond's Flycatcher,Sayornis phoebe,,,Perching Birds,PASSERIFORMES,46
+530,US, Tyrannidae,﻿﻿Gray Flycatcher,Sayornis saya,,,Perching Birds,PASSERIFORMES,46
+531,US, Tyrannidae,﻿﻿Dusky Flycatcher,Sayornis nigricans,,,Perching Birds,PASSERIFORMES,46
+532,US, Tyrannidae,﻿﻿Pacific-slope Flycatcher,Pyrocephalus rubinus,,,Perching Birds,PASSERIFORMES,46
+533,US, Tyrannidae,﻿﻿Cordilleran Flycatcher,Myiarchus tuberculifer,,,Perching Birds,PASSERIFORMES,46
+534,US, Tyrannidae,﻿﻿Buff-breasted Flycatcher,Myiarchus cinerascens,,,Perching Birds,PASSERIFORMES,46
+535,US, Tyrannidae,﻿﻿Black Phoebe,Myiarchus crinitus,,,Perching Birds,PASSERIFORMES,46
+536,US, Tyrannidae,﻿﻿Eastern Phoebe,Myiarchus tyrannulus,,,Perching Birds,PASSERIFORMES,46
+537,US, Tyrannidae,Say's Phoebe,Tyrannus melancholicus,,,Perching Birds,PASSERIFORMES,46
+538,US, Tyrannidae,﻿﻿Vermilion Flycatcher,Tyrannus couchii,,,Perching Birds,PASSERIFORMES,46
+539,US, Tyrannidae,﻿﻿Dusky-capped Flycatcher,Tyrannus vociferans,,,Perching Birds,PASSERIFORMES,46
+540,US, Tyrannidae,﻿﻿Ash-throated Flycatcher,Tyrannus crassirostris,,,Perching Birds,PASSERIFORMES,46
+541,US, Tyrannidae,Nuttings Flycatcher,Tyrannus forficatus,,,Perching Birds,PASSERIFORMES,46
+542,US, Tyrannidae,﻿﻿Great Crested Flycatcher,Tyrannus tyrannus,,,Perching Birds,PASSERIFORMES,46
+543,US, Tyrannidae,﻿﻿Brown-crested Flycatcher,Tyrannus dominicensis,,,Perching Birds,PASSERIFORMES,46
+544,US, Tyrannidae,﻿﻿La Sagra's Flycatcher,Pitangus sulphuratus,,,Perching Birds,PASSERIFORMES,46
+545,US, Tyrannidae,﻿﻿Great Kiskadee,,,,,PASSERIFORMES,46
+546,US, Tyrannidae,﻿﻿Sulphur-bellied Flycatcher,,,,,PASSERIFORMES,46
+547,US, Tyrannidae,﻿﻿Piratic Flycatcher,,,,,PASSERIFORMES,46
+548,US, Tyrannidae,﻿﻿Varlegated Flycatcher,,,,,PASSERIFORMES,46
+549,US, Tyrannidae,﻿﻿Tropical Kingbird,,,,,PASSERIFORMES,46
+550,US, Tyrannidae,﻿﻿Couch's Kingbird,,,,,PASSERIFORMES,46
+551,US, Tyrannidae,﻿﻿Cassin's Kingbird,,,,,PASSERIFORMES,46
+552,US, Tyrannidae,﻿﻿Thick-billed Kingbird,,,,,PASSERIFORMES,46
+553,US, Tyrannidae,﻿﻿Western Kingbird,,,,,PASSERIFORMES,46
+554,US, Tyrannidae,﻿﻿Eastern Kingbird,,,,,PASSERIFORMES,46
+555,US, Tyrannidae,﻿﻿Gray Kingbird,,,,,PASSERIFORMES,46
+556,US, Tyrannidae,﻿﻿Loggerhead Kingbird,,,,,PASSERIFORMES,46
+557,US, Tyrannidae,﻿﻿Scissor-tailed Flycatcher,,,,,PASSERIFORMES,46
+558,US, Tyrannidae,﻿﻿Fork-tailed Flycatcher,,,,,PASSERIFORMES,46
+559,US, Laniidae,Brown Shrike,,,,,,46
+560,US, Laniidae,Loggerhead Shrike,,,,,,46
+561,US, Laniidae,Northern Shrike,,,,,,46
+562,US, Tityridae,Rose-throated Becard,,,,,,46
+563,US, Vireonidae,"White-eyed Vireo, 367",,,,,,47
+564,US, Vireonidae,"﻿﻿Thick-billed Vireo, 367",,,,,,47
+565,US, Vireonidae,"﻿﻿Bell's Vireo, 365",,,,,,47
+566,US, Vireonidae,"﻿﻿Black-capped Vireo, 366",,,,,,47
+567,US, Vireonidae,"﻿﻿Gray Vireo, 366",,,,,,47
+568,US, Vireonidae,"﻿﻿Yellow-throated Vireo, 369",,,,,,47
+569,US, Vireonidae,"﻿﻿Plumbeous Vireo, 368",,,,,,47
+570,US, Vireonidae,"﻿﻿Cassin's Vireo, 368",,,,,,47
+571,US, Vireonidae,"﻿﻿Blue-headed Vireo, 369",,,,,,47
+572,US, Vireonidae,"﻿﻿Hutton's Vireo, 372",,,,,,47
+573,US, Vireonidae,"﻿﻿Warbling Vireo, 370",,,,,,47
+574,US, Vireonidae,"﻿﻿Philadelphia Vireo, 370",,,,,,47
+575,US, Vireonidae,"﻿﻿Red-eyed Vireo, 371",,,,,,47
+576,US, Vireonidae,"﻿﻿Yellow-green Vireo, 372",,,,,,47
+577,US, Vireonidae,"﻿﻿Black-whiskered Vireo, 371",,,,,,47
+578,US, Corvidae,Pinyon Jay,Gymnorhinus cyanocephalus,,,Perching Birds,PASSERIFORMES,48
+579,US, Corvidae,Blue Jay,Cyanocitta cristata,,,Perching Birds,PASSERIFORMES,48
+580,US, Corvidae,Steller's Jay,Cyanocitta stelleri,,,Perching Birds,PASSERIFORMES,48
+581,US, Corvidae,Western Scrub-Jay,Aphelocoma californica,,,Perching Birds,PASSERIFORMES,48
+582,US, Corvidae,Florida Scrub-Jay,Aphelocoma coerulescens,Endemic,,Perching Birds,PASSERIFORMES,48
+583,US, Corvidae,Mexican Jay,Aphelocoma ultramarina,,,Perching Birds,PASSERIFORMES,48
+584,US, Corvidae,Green Jay,Cyanocorax luxuosus,,,Perching Birds,PASSERIFORMES,48
+585,US, Corvidae,Brown Jay,Psilorhinus morio,,,Perching Birds,PASSERIFORMES,48
+586,US, Corvidae,Black-throated Magpie-Jay,Calocitta colliei,Introduced species,,Perching Birds,PASSERIFORMES,48
+587,US, Corvidae,Grey Jay,Perisoreus canadensis,,,Perching Birds,PASSERIFORMES,48
+588,US, Corvidae,Black-billed Magpie,Pica pica,,,Perching Birds,PASSERIFORMES,48
+589,US, Corvidae,Yellow-billed Magpie,Pica nuttalli,Endemic,,Perching Birds,PASSERIFORMES,48
+590,US, Corvidae,Clark's Nutcracker,Nucifraga columbiana,,,Perching Birds,PASSERIFORMES,48
+591,US, Corvidae,House Crow,Corvus splendens,Introduced species,,Perching Birds,PASSERIFORMES,48
+592,US, Corvidae,Northwestern Crow,Corvus caurinus,,,Perching Birds,PASSERIFORMES,48
+593,US, Corvidae,American Crow,Corvus brachyrhynchos,,,Perching Birds,PASSERIFORMES,48
+594,US, Corvidae,Fish Crow,Corvus ossifragus,,,Perching Birds,PASSERIFORMES,48
+595,US, Corvidae,Chihuahuan Raven,Corvus cryptoleucus,,,Perching Birds,PASSERIFORMES,48
+596,US, Corvidae,Common Raven,Corvus corax,,,Perching Birds,PASSERIFORMES,48
+597,US, Corvidae,Tamaulipas Crow,,,,,PASSERIFORMES,48
+598,US, Corvidae,Eurasian Jackdaw,,,,,PASSERIFORMES,48
+599,US, Corvidae,Hooded Crow,,,,,PASSERIFORMES,48
+600,US, Alaudidae,Horned Lark,Eremophila alpestris,,,Perching Birds,PASSERIFORMES,49
+601,US, Alaudidae,Sky Lark,,,,,PASSERIFORMES,49
+602,US, Hirundinidae,Tree Swallow,Tachycineta bicolor,,,Perching Birds,PASSERIFORMES,50
+603,US, Hirundinidae,Violet-green Swallow,Tachycineta thalassina,,,Perching Birds,PASSERIFORMES,50
+604,US, Hirundinidae,Purple Martin,Progne subis,,,Perching Birds,PASSERIFORMES,50
+605,US, Hirundinidae,Northern Rough-winged Swallow,Stelgidopteryx serripennis,,,Perching Birds,PASSERIFORMES,50
+606,US, Hirundinidae,Barn Swallow,Hirundo rustica,,,Perching Birds,PASSERIFORMES,50
+607,US, Hirundinidae,Cliff Swallow,Hirundo pyrrhonota,,,Perching Birds,PASSERIFORMES,50
+608,US, Hirundinidae,Cave Swallow,Hirundo fulva,,,Perching Birds,PASSERIFORMES,50
+609,US, Hirundinidae,Brown-chested Martin,"• Brown-chested Martin, 394",,,,PASSERIFORMES,50
+610,US, Hirundinidae,Mangrove Swallow,"• Mangrove Swallow, 395",,,,PASSERIFORMES,50
+611,US, Hirundinidae,Bahama Swallow,"• Bahama Swallow, 395",,,,PASSERIFORMES,50
+612,US, Hirundinidae,Bank Swallow,"• Bank Swallow, 391",,,,PASSERIFORMES,50
+613,US, Hirundinidae,Common House-Martin,"• Common House-Martin,",,,,PASSERIFORMES,50
+614,US, Paridae,Carolina Chickadee,Parus carolinensis,Endemic,,Perching Birds,PASSERIFORMES,51
+615,US, Paridae,Black-capped Chickadee,Parus atricapillus,,,Perching Birds,PASSERIFORMES,51
+616,US, Paridae,Mountain Chickadee,Parus gambeli,,,Perching Birds,PASSERIFORMES,51
+617,US, Paridae,Mexican Chickadee,Parus sclateri,,,Perching Birds,PASSERIFORMES,51
+618,US, Paridae,Boreal Chickadee,Parus hudsonicus,,,Perching Birds,PASSERIFORMES,51
+619,US, Paridae,Chestnut-backed Chickadee,Parus rufescens,,,Perching Birds,PASSERIFORMES,51
+620,US, Paridae,Great Tit,Parus major,Introduced species,,Perching Birds,PASSERIFORMES,51
+621,US, Paridae,Bridled Titmouse,Parus wollweberi,,,Perching Birds,PASSERIFORMES,51
+622,US, Paridae,Tufted Titmouse,Parus bicolor,,,Perching Birds,PASSERIFORMES,51
+623,US, Paridae,Black-crested Titmouse,Parus atricristatus,,,Perching Birds,PASSERIFORMES,51
+624,US, Paridae,﻿﻿Gray-headed Chickadee,,,,,PASSERIFORMES,51
+625,US, Paridae,﻿﻿Eurasian Blue Tit,,,,,PASSERIFORMES,51
+626,US, Paridae,﻿﻿Oak Titmouse,,,,,PASSERIFORMES,51
+627,US, Paridae,﻿﻿Juniper Titmouse,,,,,PASSERIFORMES,51
+628,US, Remizidae,Verdin,Auriparus flaviceps,,,Perching Birds,PASSERIFORMES,52
+629,US, Sittidae,Pygmy Nuthatch,Sitta pygmaea,,,Perching Birds,PASSERIFORMES,53
+630,US, Sittidae,Brown-headed Nuthatch,Sitta pusilla,,,Perching Birds,PASSERIFORMES,53
+631,US, Sittidae,Red-breasted Nuthatch,Sitta canadensis,,,Perching Birds,PASSERIFORMES,53
+632,US, Sittidae,White-breasted Nuthatch,Sitta carolinensis,,,Perching Birds,PASSERIFORMES,53
+633,US, Aegithalidae,Bushtit,Psaltriparus minimus,,,Perching Birds,PASSERIFORMES,53
+634,US, Certhiidae,Brown Creeper,Certhia americana,,,Perching Birds,PASSERIFORMES,54
+635,US, Troglodytidae,Rock Wren,,,,,PASSERIFORMES,55
+636,US, Troglodytidae,﻿﻿Canyon Wren,,,,,PASSERIFORMES,55
+637,US, Troglodytidae,﻿﻿House Wren,,,,,PASSERIFORMES,55
+638,US, Troglodytidae,﻿﻿Pacific Wren,,,,,PASSERIFORMES,55
+639,US, Troglodytidae,﻿﻿Winter Wren,,,,,PASSERIFORMES,55
+640,US, Troglodytidae,﻿﻿Sedge Wren,,,,,PASSERIFORMES,55
+641,US, Troglodytidae,﻿﻿Marsh Wren,,,,,PASSERIFORMES,55
+642,US, Troglodytidae,﻿﻿Carolina Wren,,,,,PASSERIFORMES,55
+643,US, Troglodytidae,﻿﻿Bewick's Wren,,,,,PASSERIFORMES,55
+644,US, Troglodytidae,﻿﻿Cactus Wren,,,,,PASSERIFORMES,55
+645,US, Troglodytidae,﻿﻿Sinaloa Wren,,,,,PASSERIFORMES,55
+646,US, Polioptilidae,Blue-grey Gnatcatcher,Polioptila caerulea,,,Perching Birds,PASSERIFORMES,56
+647,US, Polioptilidae,California Gnatcatcher,Polioptila californica,,,Perching Birds,PASSERIFORMES,56
+648,US, Polioptilidae,Black-tailed Gnatcatcher,Polioptila melanura,,,Perching Birds,PASSERIFORMES,56
+649,US, Polioptilidae,Black-capped Gnatcatcher,Polioptila nigriceps,,,Perching Birds,PASSERIFORMES,56
+650,US, Cinclidae,American Dipper,Cinclus mexicanus,,,Perching Birds,PASSERIFORMES,57
+651,US, Pycnonotidae,Red-whiskered Bulbul,Pycnonotus jocosus,Introduced species,,Perching Birds,PASSERIFORMES,58
+652,US, Pycnonotidae,Red-vented Bulbul,Pycnonotus cafer,Introduced species,,Perching Birds,PASSERIFORMES,58
+653,US, Regulidae,Ruby-crowned Kinglet,Regulus calendula,,,Perching Birds,PASSERIFORMES,59
+654,US, Regulidae,Golden-crowned Kinglet,Regulus satrapa,,,Perching Birds,PASSERIFORMES,59
+655,US, Phylloscopidae,Willow Warbler,,,,,,60
+656,US, Phylloscopidae,Dusky Warbler,,,,,,60
+657,US, Phylloscopidae,Yellow-browed Warbler,,,,,,60
+658,US, Phylloscopidae,Arctic Warbler,,,,,,60
+659,US, Sylviidae,Wrentit,Chamaea fasciata,,,Perching Birds,PASSERIFORMES,61
+660,US, Megaluridae,Middendorff's Grasshopper-Warbler,,,,,,62
+661,US, Megaluridae,Lanceolated Warbler,,,,,,62
+662,US, Muscicapidae,Gray-streaked Flycatcher,,,,,,63
+663,US, Muscicapidae,﻿﻿Dark-sided Flycatcher,,,,,,63
+664,US, Muscicapidae,﻿﻿Siberian Rubythroat,,,,,,63
+665,US, Muscicapidae,Bluethroat,,,,,,63
+666,US, Muscicapidae,﻿﻿Red-flanked Bluetail,,,,,,63
+667,US, Muscicapidae,﻿﻿Taiga Flycatcher,,,,,,63
+668,US, Muscicapidae,﻿﻿Northern Wheatear,,,,,,63
+669,US, Muscicapidae,Stonechat,,,,,,63
+670,US, Turdidae,Eastern Bluebird,,,,,,64
+671,US, Turdidae,﻿﻿Western Bluebird,,,,,,64
+672,US, Turdidae,﻿﻿Mountain Bluebird,,,,,,64
+673,US, Turdidae,﻿﻿Townsend's Solitaire,,,,,,64
+674,US, Turdidae,﻿﻿Brown-backed Solitaire,,,,,,64
+675,US, Turdidae,﻿﻿Orange-billed Nightingale-Thrush,,,,,,64
+676,US, Turdidae,Veery,,,,,,64
+677,US, Turdidae,﻿﻿Gray-cheeked Thrush,,,,,,64
+678,US, Turdidae,﻿﻿Bicknell's Thrush,,,,,,64
+679,US, Turdidae,﻿﻿Swainson's Thrush,,,,,,64
+680,US, Turdidae,﻿﻿Hermit Thrush,,,,,,64
+681,US, Turdidae,﻿﻿Wood Thrush,,,,,,64
+682,US, Turdidae,﻿﻿Eyebrowed Thrush,,,,,,64
+683,US, Turdidae,﻿﻿Dusky Thrush,,,,,,64
+684,US, Turdidae,Fieldfare,,,,,,64
+685,US, Turdidae,Redwing,,,,,,64
+686,US, Turdidae,﻿﻿Clay-colored Thrush,,,,,,64
+687,US, Turdidae,﻿﻿White-throated Thrush,,,,,,64
+688,US, Turdidae,﻿﻿Rufous-backed Robin,,,,,,64
+689,US, Turdidae,﻿﻿American Robin,,,,,,64
+690,US, Turdidae,﻿﻿Varied Thrush,,,,,,64
+691,US, Turdidae,﻿﻿Aztec Thrush,,,,,,64
+692,US, Mimidae,Blue Mockingbird,,,,,,65
+693,US, Mimidae,﻿﻿Gray Catbird,,,,,,65
+694,US, Mimidae,﻿﻿Curve-billed Thrasher,,,,,,65
+695,US, Mimidae,﻿﻿Brown Thrasher,,,,,,65
+696,US, Mimidae,﻿﻿Long-billed Thrasher,,,,,,65
+697,US, Mimidae,﻿﻿Bendire's Thrasher,,,,,,65
+698,US, Mimidae,﻿﻿California Thrasher,"• Island Scrub-Jay, 3﻿﻿",,,,,65
+699,US, Mimidae,﻿﻿Le Conte's Thrasher,"Florida Scrub-Jay, 37﻿﻿","• Island Scrub-Jay, 3﻿﻿",,,,65
+700,US, Mimidae,﻿﻿Crissal Thrasher,"Florida Scrub-Jay, 37﻿﻿","• Island Scrub-Jay, 3﻿﻿",,,,65
+701,US, Mimidae,﻿﻿Sage Thrasher,"• Western Scrub-Jay, ﻿﻿6",,,,,65
+702,US, Mimidae,﻿﻿Bahama Mockingbird,"• Mexican Jay,﻿﻿78",,,,,65
+703,US, Mimidae,﻿﻿Northern Mockingbird,• Clark's Nutcracker﻿﻿380,,,,,65
+704,US, Sturnidae,European Starling,,,,,,66
+705,US, Sturnidae,Common Myna,,,,,,66
+706,US, Sturnidae,Crested Myna,,,,,,66
+707,US, Sturnidae,Hill Myna,,,,,,66
+708,US, Prunellidae,Siberian Accentor,,,,,,67
+709,US, Motacillidae,Eastern Yellow Wagtail,,,,,,68
+710,US, Motacillidae,﻿﻿White Wagtail,,,,,,68
+711,US, Motacillidae,﻿﻿Olive-backed Pipit,,,,,,68
+712,US, Motacillidae,﻿﻿Pechora Pipit,,,,,,68
+713,US, Motacillidae,﻿﻿Red-throated Pipit,,,,,,68
+714,US, Motacillidae,﻿﻿American Pipit,,,,,,68
+715,US, Motacillidae,﻿﻿Sprague's Pipit,,,,,,68
+716,US, Bombycillidae,Bohemian Waxwing,Bombycilla garrulus,,,Perching Birds,PASSERIFORMES,69
+717,US, Bombycillidae,Cedar Waxwing,Bombycilla cedrorum,,,Perching Birds,PASSERIFORMES,69
+718,US, Ptiliogonatidae,Gray Silky-Flycatcher,,,,,,70
+719,US, Ptiliogonatidae,Phainopepla,,,,,,70
+720,US, Peucedramidae,Olive Warbler,Peucedramus taeniatus,,,Perching Birds,PASSERIFORMES,71
+721,US, Calcariidae,Lapland Longspur,,,,,,72
+722,US, Calcariidae,﻿﻿Chestnut-collared Longspur,,,,,,72
+723,US, Calcariidae,﻿﻿Smith's Longspur,,,,,,72
+724,US, Calcariidae,﻿﻿McCown's Longspur,,,,,,72
+725,US, Calcariidae,﻿﻿Snow Bunting,,,,,,72
+726,US, Calcariidae,﻿﻿McKay's Bunting,,,,,,72
+727,US, Parulidae,Ovenbird,,,,,,73
+728,US, Parulidae,Worm-eating Warbler,,,,,,73
+729,US, Parulidae,﻿﻿Louisiana Waterthrush,,,,,,73
+730,US, Parulidae,Northern Waterthrush,,,,,,73
+731,US, Parulidae,﻿﻿Bachman's Warblert,,,,,,73
+732,US, Parulidae,﻿﻿Golden-winged Warbler,,,,,,73
+733,US, Parulidae,﻿﻿Blue-winged Warbler,,,,,,73
+734,US, Parulidae,﻿﻿Black-and-white Warbler,,,,,,73
+735,US, Parulidae,﻿﻿Prothonotary Warbler,,,,,,73
+736,US, Parulidae,﻿﻿Swainson's Warbler,,,,,,73
+737,US, Parulidae,﻿﻿Crescent-chested Warbler,,,,,,73
+738,US, Parulidae,﻿﻿Tennessee Warbler,,,,,,73
+739,US, Parulidae,﻿﻿Orange-crowned Warbler,,,,,,73
+740,US, Parulidae,﻿﻿Colima Warbler,,,,,,73
+741,US, Parulidae,﻿﻿Lucy's Warbler,,,,,,73
+742,US, Parulidae,﻿﻿Nashville Warbler,,,,,,73
+743,US, Parulidae,﻿﻿Virginia's Warbler,,,,,,73
+744,US, Parulidae,﻿﻿Connecticut Warbler,,,,,,73
+745,US, Parulidae,﻿﻿Gray-crowned Yellowthroat,,,,,,73
+746,US, Parulidae,﻿﻿MacGillivrays Warbler,,,,,,73
+747,US, Parulidae,﻿﻿Mourning Warbler,,,,,,73
+748,US, Parulidae,﻿﻿Kentucky Warbler,,,,,,73
+749,US, Parulidae,﻿﻿Common Yellowthroat,,,,,,73
+750,US, Parulidae,﻿﻿Hooded Warbler,,,,,,73
+751,US, Parulidae,﻿﻿American Redstart,,,,,,73
+752,US, Parulidae,﻿﻿Kirtland's Warbler,,,,,,73
+753,US, Parulidae,﻿﻿Cape May Warbler,,,,,,73
+754,US, Parulidae,﻿﻿Cerulean Warbler,,,,,,73
+755,US, Parulidae,﻿﻿Northern Parula,,,,,,73
+756,US, Parulidae,﻿﻿Tropical Parula,,,,,,73
+757,US, Parulidae,﻿﻿Magnolia Warbler,,,,,,73
+758,US, Parulidae,﻿﻿Bay-breasted Warbler,,,,,,73
+759,US, Parulidae,﻿﻿Blackburnian Warbler,,,,,,73
+760,US, Parulidae,﻿﻿Yellow Warbler,,,,,,73
+761,US, Parulidae,﻿﻿Chestnut-sided Warbler,,,,,,73
+762,US, Parulidae,﻿﻿Blackpoll Warbler,,,,,,73
+763,US, Parulidae,﻿﻿Black-throated Blue Warbler,,,,,,73
+764,US, Parulidae,﻿﻿Pine Warbler,,,,,,73
+765,US, Parulidae,﻿﻿Yellow-rumped Warbler,,,,,,73
+766,US, Parulidae,Yellow-throated Warbler,,,,,,73
+767,US, Parulidae,﻿﻿Prairie Warbler,,,,,,73
+768,US, Parulidae,﻿﻿Grace's Warbler,,,,,,73
+769,US, Parulidae,﻿﻿Black-throated Gray Warbler,,,,,,73
+770,US, Parulidae,﻿﻿Townsend's Warbler,,,,,,73
+771,US, Parulidae,﻿﻿Hermit Warbler,,,,,,73
+772,US, Parulidae,﻿﻿Golden-cheeked Warbler,,,,,,73
+773,US, Parulidae,﻿﻿Black-throated Green Warbler,,,,,,73
+774,US, Parulidae,﻿﻿Fan-tailed Warbler,,,,,,73
+775,US, Parulidae,﻿﻿Rufous-capped Warbler,,,,,,73
+776,US, Parulidae,﻿﻿Golden-crowned Warbler,,,,,,73
+777,US, Parulidae,﻿﻿Canada Warbler,,,,,,73
+778,US, Parulidae,﻿﻿Wilson's Warbler,,,,,,73
+779,US, Parulidae,﻿﻿Red-faced Warbler,,,,,,73
+780,US, Parulidae,﻿﻿Painted Redstart,,,,,,73
+781,US, Parulidae,﻿﻿Slate-throated Redstart,,,,,,73
+782,US, Parulidae,﻿﻿Yellow-breasted Chat,,,,,,73
+783,US, Undetermined,Bananaquit,,,,,,74
+784,US, Thraupidae,Red-crested Cardinal,,,,,,75
+785,US, Thraupidae,﻿﻿Western Spindalis,,,,,,75
+786,US, Emberizidae,White-collared Seedeater,,,,,,76
+787,US, Emberizidae,﻿﻿Yellow-faced Grassquit,,,,,,76
+788,US, Emberizidae,﻿﻿Black-faced Grassquit,,,,,,76
+789,US, Emberizidae,﻿﻿Olive Sparrow,,,,,,76
+790,US, Emberizidae,﻿﻿Green-tailed Towhee,,,,,,76
+791,US, Emberizidae,﻿﻿Spotted Towhee,,,,,,76
+792,US, Emberizidae,﻿﻿Eastern Towhee,,,,,,76
+793,US, Emberizidae,﻿﻿Rufous-crowned Sparrow,,,,,,76
+794,US, Emberizidae,﻿﻿Canyon Towhee,,,,,,76
+795,US, Emberizidae,﻿﻿California Towhee,,,,,,76
+796,US, Emberizidae,﻿﻿Abert's Towhee,,,,,,76
+797,US, Emberizidae,﻿﻿Rufous-winged Sparrow,,,,,,76
+798,US, Emberizidae,﻿﻿Botteri's Sparrow,,,,,,76
+799,US, Emberizidae,﻿﻿Cassin's Sparrow,,,,,,76
+800,US, Emberizidae,﻿﻿Bachman's Sparrow,,,,,,76
+801,US, Emberizidae,﻿﻿American Tree Sparrow,,,,,,76
+802,US, Emberizidae,﻿﻿Chipping Sparrow,,,,,,76
+803,US, Emberizidae,﻿﻿Clay-colored Sparrow,,,,,,76
+804,US, Emberizidae,﻿﻿Brewer's Sparrow,,,,,,76
+805,US, Emberizidae,﻿﻿Field Sparrow,,,,,,76
+806,US, Emberizidae,﻿﻿Black-chinned Sparrow,,,,,,76
+807,US, Emberizidae,﻿﻿Vesper Sparrow,,,,,,76
+808,US, Emberizidae,﻿﻿Lark Sparrow,,,,,,76
+809,US, Emberizidae,﻿﻿Five-striped Sparrow,,,,,,76
+810,US, Emberizidae,﻿﻿Black-throated Sparrow,,,,,,76
+811,US, Emberizidae,﻿﻿Sagebrush Sparrow,,,,,,76
+812,US, Emberizidae,﻿﻿Bell's Sparrow,,,,,,76
+813,US, Emberizidae,﻿﻿Lark Bunting,,,,,,76
+814,US, Emberizidae,Savannah Sparrow,,,,,,76
+815,US, Emberizidae,﻿﻿Grasshopper Sparrow,,,,,,76
+816,US, Emberizidae,﻿﻿Baird's Sparrow,,,,,,76
+817,US, Emberizidae,﻿﻿Henslow's Sparrow,,,,,,76
+818,US, Emberizidae,﻿﻿Le Conte's Sparrow,,,,,,76
+819,US, Emberizidae,﻿﻿Nelson's Sparrow,,,,,,76
+820,US, Emberizidae,﻿﻿Saltmarsh Sparrow,,,,,,76
+821,US, Emberizidae,﻿﻿Seaside Sparrow,,,,,,76
+822,US, Emberizidae,﻿﻿Fox Sparrow,,,,,,76
+823,US, Emberizidae,Song Sparrow,,,,,,76
+824,US, Emberizidae,﻿﻿Lincoln's Sparrow,,,,,,76
+825,US, Emberizidae,﻿﻿Swamp Sparrow,,,,,,76
+826,US, Emberizidae,﻿﻿White-throated Sparrow,,,,,,76
+827,US, Emberizidae,﻿﻿Harris's Sparrow,,,,,,76
+828,US, Emberizidae,﻿﻿White-crowned Sparrow,,,,,,76
+829,US, Emberizidae,﻿﻿Golden-crowned Sparrow,,,,,,76
+830,US, Emberizidae,﻿﻿Dark-eyed Junco,,,,,,76
+831,US, Emberizidae,﻿﻿Yellow-eyed Junco,,,,,,76
+832,US, Emberizidae,﻿﻿Little Bunting,,,,,,76
+833,US, Emberizidae,﻿﻿Rustic Bunting,,,,,,76
+834,US, Cardinalidae,Hepatic Tanager,,,,,,77
+835,US, Cardinalidae,﻿﻿Summer Tanager,,,,,,77
+836,US, Cardinalidae,﻿﻿Scarlet Tanager,,,,,,77
+837,US, Cardinalidae,﻿﻿Western Tanager,,,,,,77
+838,US, Cardinalidae,﻿﻿Flame-colored Tanager,,,,,,77
+839,US, Cardinalidae,﻿﻿Crimson-collared Grosbeak,,,,,,77
+840,US, Cardinalidae,﻿﻿Northern Cardinal,,,,,,77
+841,US, Cardinalidae,﻿﻿Pyrrhuloxia,,,,,,77
+842,US, Cardinalidae,﻿﻿Yellow Grosbeak,,,,,,77
+843,US, Cardinalidae,﻿﻿Rose-breasted Grosbeak,,,,,,77
+844,US, Cardinalidae,﻿﻿Black-headed Grosbeak,,,,,,77
+845,US, Cardinalidae,﻿﻿Blue Bunting,,,,,,77
+846,US, Cardinalidae,﻿﻿Blue Grosbeak,,,,,,77
+847,US, Cardinalidae,﻿﻿Lazuli Bunting,,,,,,77
+848,US, Cardinalidae,﻿﻿Indigo Bunting,,,,,,77
+849,US, Cardinalidae,﻿﻿Varied Bunting,,,,,,77
+850,US, Cardinalidae,﻿﻿Painted Bunting,,,,,,77
+851,US, Cardinalidae,Dickcissel,,,,,,77
+852,US, Icteridae,Bobolink,,,,,,78
+853,US, Icteridae,﻿﻿Red-winged Blackbird,,,,,,78
+854,US, Icteridae,﻿﻿Tricolored Blackbird,,,,,,78
+855,US, Icteridae,﻿﻿Eastern Meadowlark,,,,,,78
+856,US, Icteridae,﻿﻿Western Meadowlark,,,,,,78
+857,US, Icteridae,﻿﻿Yellow-headed Blackbird,,,,,,78
+858,US, Icteridae,﻿﻿Rusty Blackbird,,,,,,78
+859,US, Icteridae,Brewer's Blackbird,,,,,,78
+860,US, Icteridae,Common Grackle,,,,,,78
+861,US, Icteridae,Boat-tailed Grackle,,,,,,78
+862,US, Icteridae,﻿﻿Great-tailed Grackle,,,,,,78
+863,US, Icteridae,﻿﻿Shiny Cowbird,,,,,,78
+864,US, Icteridae,﻿﻿Bronzed Cowbird,,,,,,78
+865,US, Icteridae,﻿﻿Brown-headed Cowbird,,,,,,78
+866,US, Icteridae,﻿﻿Black-vented Oriole,,,,,,78
+867,US, Icteridae,﻿﻿Orchard Oriole,,,,,,78
+868,US, Icteridae,﻿﻿Hooded Oriole,,,,,,78
+869,US, Icteridae,﻿﻿Streak-backed Oriole,,,,,,78
+870,US, Icteridae,Bullock's Oriole,,,,,,78
+871,US, Icteridae,﻿﻿Spot-breasted Oriole,,,,,,78
+872,US, Icteridae,﻿﻿Altamira Oriole,,,,,,78
+873,US, Icteridae,﻿﻿Audubon's Oriole,,,,,,78
+874,US, Icteridae,﻿﻿Baltimore Oriole,,,,,,78
+875,US, Icteridae,﻿﻿Scott's Oriole,,,,,,78
+876,US, Fringillidae,Common Chaffinch,,,,,,79
+877,US, Fringillidae,Brambling,,,,,,79
+878,US, Fringillidae,﻿﻿Gray-crowned Rosy-Finch,,,,,,79
+879,US, Fringillidae,﻿﻿Black Rosy-Finch,,,,,,79
+880,US, Fringillidae,﻿﻿Brown-capped Rosy-Finch,,,,,,79
+881,US, Fringillidae,﻿﻿Pine Grosbeak,,,,,,79
+882,US, Fringillidae,﻿﻿Eurasian Bullfinch,,,,,,79
+883,US, Fringillidae,﻿﻿Common Rosefinch,,,,,,79
+884,US, Fringillidae,﻿﻿Purple Finch,,,,,,79
+885,US, Fringillidae,﻿﻿Cassin's Finch,,,,,,79
+886,US, Fringillidae,﻿﻿House Finch,,,,,,79
+887,US, Fringillidae,﻿﻿Red Crossbill,,,,,,79
+888,US, Fringillidae,﻿﻿White-winged Crossbill,,,,,,79
+889,US, Fringillidae,﻿﻿Common Redpoll,,,,,,79
+890,US, Fringillidae,﻿﻿Hoary Redpoll,,,,,,79
+891,US, Fringillidae,﻿﻿Eurasian Siskin,,,,,,79
+892,US, Fringillidae,﻿﻿Pine Siskin,,,,,,79
+893,US, Fringillidae,﻿﻿Lesser Goldfinch,,,,,,79
+894,US, Fringillidae,Lawrence's Goldfinch,,,,,,79
+895,US, Fringillidae,﻿﻿American Goldfinch,,,,,,79
+896,US, Fringillidae,﻿﻿European Goldfinch,,,,,,79
+897,US, Fringillidae,﻿﻿Oriental Greenfinch,,,,,,79
+898,US, Fringillidae,Yellow-fronted Canary,,,,,,79
+899,US, Fringillidae,Evening Grosbeak,,,,,,79
+900,US, Fringillidae,Hawfinch,,,,,,79
+901,US, Passeridae,House Sparrow,Passer domesticus,Introduced species,,Perching Birds,PASSERIFORMES,80
+902,US, Passeridae,Eurasian Tree Sparrow,Passer montanus,Introduced species,,Perching Birds,PASSERIFORMES,80
+903,US, Plocedidae,Orange Bishop,Euplectes franciscanus,Introduced species,,Perching Birds,PASSERIFORMES,81
+904,US, Estrildidae,Tricolored Munia,,,,,,82
+905,US, Estrildidae,Java Sparrow,,,,,,82
+906,US, Estrildidae,Nutmeg Mannikan,,,,,,82

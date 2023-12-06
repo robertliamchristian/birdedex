@@ -68,7 +68,7 @@ class RegistrationForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     submit = SubmitField('Register')
 
-class Log(db.Model):
+class Log(db.Model): 
     __tablename__ = 'log'
     birdid = db.Column(db.Integer, primary_key=True)
     region = db.Column(db.String(255), nullable=False)
@@ -76,9 +76,9 @@ class Log(db.Model):
     family = db.Column(db.String(255), nullable=False)
     latin = db.Column(db.String(255), nullable=True)
     flags = db.Column(db.String(255), nullable=True)
-    sighting_time = db.Column(db.DateTime, nullable=True)
+    #sighting_time = db.Column(db.DateTime, nullable=True)
     bird_type = db.Column(db.String(255), nullable=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('alluser.id'))  
+    #user_id = db.Column(db.Integer, db.ForeignKey('alluser.id'))  
 
     def __repr__(self):
         return f'<log {self.birdid}>'
@@ -163,13 +163,13 @@ def userlist():
 @login_required
 def view_list(listid):
     list = UserList.query.get_or_404(listid)
-    #print("List title:", list.title)  # Temporary print statement for debugging
+    #print("List title:", list.title)  
 
     if list.userid != current_user.id:
-        return redirect(url_for('index'))  # Redirect if user doesn't own the list
+        return redirect(url_for('index'))  
 
     if request.method == 'POST':
-        bird_name = request.form.get('bird')  # Replace with your actual form field name
+        bird_name = request.form.get('bird')  
         if bird_name:
             new_bird = Log.query.filter_by(bird=bird_name).first()
             if new_bird:
@@ -181,9 +181,9 @@ def view_list(listid):
                 )
                 db.session.add(new_sighting)
                 db.session.commit()
-            return redirect(url_for('view_list', listid=listid))  # Redirect back to the list view
+            return redirect(url_for('view_list', listid=listid))  
 
-    # Handle GET request and initial loading of the page
+    
     sightings_with_names = db.session.query(
         UserSighting, Log.bird
     ).join(
