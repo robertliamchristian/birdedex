@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Birdédex</title>
+    <title>Birdédex Lists</title>
     <style>
         body {
             font-family: "Avenir Next", monospace;
@@ -19,7 +19,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #FF6B6B;
+            background-color: #25b8f7;
             color: white;
             z-index: 10;
             padding: 10px;
@@ -217,65 +217,63 @@
             align-items: center;
         }
 
-      
+        #list {
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+
     </style>
 </head>
 <body>
     
     <div id="header">
         <div id="name_header">
-            <b>Birdédex</b>
+            <b>Birdédex Lists</b>
             <div id="total-logged">Total Logged {{ sighted_count }}/{{ total_bird_count }}</div>
         </div>
         <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
     </div>
     
     <div id="slide-in-menu" class="menu">
-    <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="{{ url_for('index') }}">Home</a>
+        {% if current_user.is_authenticated %}
+            <div class="menu-content">
+                <div class="user-info">
+                    <span>Logged in as {{ current_user.username }}</span>
+                    <form action="{{ url_for('logout') }}" method="post">
+                        <input type="submit" value="Logout">
+                    </form>
+                </div>
+                
+                <div class="bird-search">
+                    <form action="{{ url_for('view_list', listid=list.listid) }}" method="post">
+                        <input type="text" name="bird" id="bird-input" placeholder="Enter bird name" oninput="fetchSuggestions()">
+                        <input type="submit" value="Add Bird">
+                    </form>
+                </div>
 
+                <!-- Suggestions will be shown here -->
+                <div id="suggestions" style="display:none;"></div>
+            </div>
+        {% endif %}
+    </div>
     
-    {% if current_user.is_authenticated %}
-    <div class="mylistnav"><a href="{{ url_for('userlist') }}">My Lists</a></div>
-
-    <div class="menu-content">
-        <div class="user-info">
-            <span>Logged in as {{ current_user.username }}</span>
-            <form action="{{ url_for('logout') }}" method="post">
-                <input type="submit" value="Logout">
-            </form>
-        </div>
-        
-        <div class="bird-search">
-            <form action="/" method="post">
-                <input type="text" name="bird" id="bird-input" placeholder="Enter a bird name" oninput="fetchSuggestions()">
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-        <div id="suggestions" style="display:none;"></div>
-    </div>
-    {% endif %}
-</div>
-
-
-    <div id="content">
-        {% for bird_type, bird_list in user_birdedex.items() %}
-            <h3>{{ bird_type }}</h3>
-            <ul class="no-bullets">
-                {% for birdid, bird_name, sighting_time in bird_list %}
-                    <li> 
-                        {{ birdid }}. {{ bird_name }} 
-                        {% if sighting_time %}
-                            - {{ sighting_time.strftime('%m-%d-%Y') }}
-                        {% endif %}
-                    </li>
-                {% endfor %}
-            </ul>
-        {% endfor %}
+    <div id="list">
+        <h1>{{ list.title }}</h1>
+        <h3>Logged Birds:</h3>
+        <ul>
+            {% for sighting, bird_name in sightings %}
+    <li>{{ sighting.birdref }}. {{ bird_name }} - {{ sighting.sighting_time.strftime('%m-%d-%Y') }}</li>
+{% else %}
+    <li>No birds found in this list.</li>
+{% endfor %}
+        </ul>
     </div>
 
 
-
-    <script>
+<script>
     function toggleMenu() {
     var menu = document.getElementById("slide-in-menu");
     menu.style.width = menu.style.width === '250px' ? '0' : '250px';

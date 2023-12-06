@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, redirect, url_for
+from flask import Flask, render_template, request, jsonify, redirect, url_for, session
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, login_user, logout_user, current_user, login_required, UserMixin
 from datetime import datetime
@@ -30,6 +30,17 @@ class UserSighting(db.Model):
     birdref = db.Column(db.Integer, db.ForeignKey('log.birdid'))
     userid = db.Column(db.Integer, db.ForeignKey('alluser.id'))
     sighting_time = db.Column(db.DateTime, nullable=True)
+    listid = db.Column(db.Integer, db.ForeignKey('user_list.listid'))
+
+class UserList(db.Model):
+    __tablename__ = 'user_list'
+    listid = db.Column(db.Integer, primary_key=True)
+    userid = db.Column(db.Integer, db.ForeignKey('alluser.id'))
+    title = db.Column(db.String(255), nullable=False)
+    created_at = db.Column(db.DateTime, default=datetime.now)
+   
+
+
 
 class User(UserMixin, db.Model):
     __tablename__ = 'alluser'  # Set the new table name here
@@ -112,6 +123,80 @@ def suggest_birds():
     matching_birds = Log.query.filter(Log.bird.ilike(f'%{query}%')).all()
     bird_names = [bird.bird for bird in matching_birds]
     return jsonify(bird_names)
+
+@app.route('/userlist', methods=['GET', 'POST'])
+@login_required
+def userlist():
+    if request.method == 'POST':
+        # Logic to handle list creation or adding birds to a list
+        list_name = request.form.get('list_name')
+        if list_name:
+            # Create a new list
+            new_list = UserList(userid=current_user.id, title=list_name)
+            db.session.add(new_list)
+            db.session.commit()
+            # Redirect to the list view page where user can add birds to the new list
+            return redirect(url_for('view_list', listid=new_list.listid))
+
+        # If adding birds to an existing list, retrieve listid from form
+        listid = request.form.get('listid')
+        bird_name = request.form.get('bird')
+        if listid and bird_name:
+            # Logic to add bird to the list
+            new_bird = Log.query.filter_by(bird=bird_name).first()
+            if new_bird:
+                new_sighting = UserSighting(
+                    birdref=new_bird.birdid,
+                    userid=current_user.id,
+                    sighting_time=datetime.now(),
+                    listid=listid
+                )
+                db.session.add(new_sighting)
+                db.session.commit()
+
+    # GET request logic to display the user's lists
+    lists = UserList.query.filter_by(userid=current_user.id).all()
+    csrf_token = session.get('_csrf_token')
+    return render_template('userlist.html', lists=lists, csrf_token=csrf_token)
+
+@app.route('/list/<int:listid>', methods=['GET', 'POST'])
+@login_required
+def view_list(listid):
+    list = UserList.query.get_or_404(listid)
+    #print("List title:", list.title)  # Temporary print statement for debugging
+
+    if list.userid != current_user.id:
+        return redirect(url_for('index'))  # Redirect if user doesn't own the list
+
+    if request.method == 'POST':
+        bird_name = request.form.get('bird')  # Replace with your actual form field name
+        if bird_name:
+            new_bird = Log.query.filter_by(bird=bird_name).first()
+            if new_bird:
+                new_sighting = UserSighting(
+                    birdref=new_bird.birdid, 
+                    userid=current_user.id, 
+                    sighting_time=datetime.now(), 
+                    listid=listid
+                )
+                db.session.add(new_sighting)
+                db.session.commit()
+            return redirect(url_for('view_list', listid=listid))  # Redirect back to the list view
+
+    # Handle GET request and initial loading of the page
+    sightings_with_names = db.session.query(
+        UserSighting, Log.bird
+    ).join(
+        Log, UserSighting.birdref == Log.birdid
+    ).filter(
+        UserSighting.listid == listid, 
+        UserSighting.userid == current_user.id
+    ).all()
+
+    return render_template('view_list.html', list=list, sightings=sightings_with_names)
+
+
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():

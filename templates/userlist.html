@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Birdédex</title>
+    <title>Birdédex Lists</title>
     <style>
         body {
             font-family: "Avenir Next", monospace;
@@ -19,7 +19,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #FF6B6B;
+            background-color: #25b8f7;
             color: white;
             z-index: 10;
             padding: 10px;
@@ -216,15 +216,13 @@
             justify-content: space-between;
             align-items: center;
         }
-
-      
     </style>
 </head>
 <body>
     
     <div id="header">
         <div id="name_header">
-            <b>Birdédex</b>
+            <b>Birdédex Lists</b>
             <div id="total-logged">Total Logged {{ sighted_count }}/{{ total_bird_count }}</div>
         </div>
         <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
@@ -232,11 +230,9 @@
     
     <div id="slide-in-menu" class="menu">
     <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
-
+    <a href="{{ url_for('index') }}">Home</a>
     
     {% if current_user.is_authenticated %}
-    <div class="mylistnav"><a href="{{ url_for('userlist') }}">My Lists</a></div>
-
     <div class="menu-content">
         <div class="user-info">
             <span>Logged in as {{ current_user.username }}</span>
@@ -256,26 +252,37 @@
     {% endif %}
 </div>
 
+    <h1>My Bird Lists</h1>
+    
+    <!-- Display existing lists -->
+    <div id="existing-lists">
+        <h2>Existing Lists</h2>
+        <ul>
+            {% for list in lists %}
+                <li>
+                    <a href="{{ url_for('view_list', listid=list.listid) }}">{{ list.title }}</a>
+                    - Created on {{ list.created_at.strftime('%Y-%m-%d') }}
+                </li>
+            {% else %}
+                <li>No lists found.</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <!-- Form to create a new list -->
+    <div id="new-list-form">
+        <h2>Create a New List</h2>
+        <form action="{{ url_for('userlist') }}" method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+    <input type="text" name="list_name" placeholder="Enter list title" required>
+    <input type="submit" value="Create List">
+</form>
 
-    <div id="content">
-        {% for bird_type, bird_list in user_birdedex.items() %}
-            <h3>{{ bird_type }}</h3>
-            <ul class="no-bullets">
-                {% for birdid, bird_name, sighting_time in bird_list %}
-                    <li> 
-                        {{ birdid }}. {{ bird_name }} 
-                        {% if sighting_time %}
-                            - {{ sighting_time.strftime('%m-%d-%Y') }}
-                        {% endif %}
-                    </li>
-                {% endfor %}
-            </ul>
-        {% endfor %}
     </div>
 
+    <hr>
 
-
-    <script>
+<script>
     function toggleMenu() {
     var menu = document.getElementById("slide-in-menu");
     menu.style.width = menu.style.width === '250px' ? '0' : '250px';
