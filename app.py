@@ -9,6 +9,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired
 
+
 load_dotenv()
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Replace with a real secret key
@@ -224,7 +225,7 @@ def index():
 
             db.session.commit()
 
-    all_birds = Log.query.order_by(Log.birdid).all()
+    all_birds = Log.query.order_by(Log.family).all()
 
     user_sightings = UserSighting.query.filter_by(userid=current_user.id).all()
     user_sightings_dict = {sighting.birdref: sighting for sighting in user_sightings}
@@ -233,7 +234,7 @@ def index():
     default_bird_type = "Other"  # For birds without a specified type
 
     for bird in all_birds:
-        bird_type = bird.bird_type if bird.bird_type else default_bird_type
+        family = bird.family if bird.family else default_bird_type
 
         if bird.birdid in user_sightings_dict:
             sighting = user_sightings_dict[bird.birdid]
@@ -241,10 +242,10 @@ def index():
         else:
             bird_entry = (bird.birdid, '???', None)
 
-        if bird_type not in user_birdedex:
-            user_birdedex[bird_type] = []
+        if bird.family not in user_birdedex:
+            user_birdedex[family] = []
 
-        user_birdedex[bird_type].append(bird_entry)
+        user_birdedex[family].append(bird_entry)
 
     sighted_count = len(user_sightings)
     total_bird_count = len(all_birds)
