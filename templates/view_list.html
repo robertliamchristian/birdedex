@@ -295,13 +295,14 @@
         {% endif %}
     </div>
    <div class="bird-search">
-            <form action="/" method="post">
-                <input type="text" name="bird" id="bird-input" placeholder="Enter a bird name" oninput="fetchSuggestions()">
-                <input type="submit" value="Submit">
-            </form>
-        
-        <div id="suggestions" style="display:none;"></div>
-    </div>
+    <form action="{{ url_for('view_list', listid=list.listid) }}" method="post">
+        <input type="text" name="bird" id="bird-input" placeholder="Enter a bird name" oninput="fetchSuggestions()">
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="suggestions" style="display:none;"></div>
+</div>
+
     
     <div id="list">
         <h1>{{ list.title }}</h1>
