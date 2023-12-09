@@ -12,6 +12,7 @@
         }
 
         #header {
+            padding: 15px 10px;
             display: flex;
             justify-content: space-between; /* This will align children to each end */
             align-items: center;
@@ -53,11 +54,20 @@
             font-size: 8pt;
         }
 
+          input[type="text"] {
+            border: 1px solid #ccc; /* Light grey border */
+            border-radius: 5px; /* Rounded corners for the input field */
+            padding: 10px;
+            margin: 5px 0; /* Add margin on top and bottom */
+            width: calc(100% - 24px); /* Adjust width to account for padding and border */
+            max-width: none; /* Remove max-width restriction */
+        }
+
         input[type="submit"] {
-            background-color: #4D96FF;
-            color: white;
-            cursor: pointer;
-            font-size: 8pt;
+            border: 1px solid #ccc; /* Light grey border for consistency */
+            border-radius: 5px; /* Match border radius with input field */
+            padding: 10px 20px; /* Adjust padding as needed */
+            margin-left: 10px; /* Add space between the input field and submit button */
         }
 
         input[type="submit"]:hover {
@@ -71,12 +81,7 @@
         }
 
         #content {
-            margin-top: 50px; /* Adjust based on actual header size */
-            padding: 20px;
-            overflow-y: auto;
-            height: calc(100vh - 100px);
-            background-color: #FFFFFF;
-            color: #333;
+            padding-top: 100px; /* Increase this if your header is larger */
         }
 
         ul.no-bullets {
@@ -85,7 +90,7 @@
         }
 
       #suggestions {
-                width: calc(100% - 20px); /* Adjust width to line up with the input */
+                width: calc(100% - 24px);
                 left: 10px; /* Align left edge with the input */
                 top: unset;
                 bottom: -100vh; /* Position it at the bottom of the form */
@@ -112,10 +117,11 @@
 
         input[type="text"], input[type="submit"] {
             border: none;
-            border-radius: 20px;
+            border-radius: 0;
+            margin: 0;
             padding: 10px;
-            margin: 5px;
-            width: auto;
+            margin-right: 40px;
+            width: 100%; /* Full width by default, which will be overridden by flexbox */
         }
 
         form {
@@ -129,7 +135,7 @@
         #bird-input {
             flex-grow: 1; /* or you can use width: 100%; */
             margin-right: 10px;
-            max-width: 125px; /* Set a max-width that fits your design */
+            
         }
 
        #form_add_bird {
@@ -210,16 +216,17 @@
             text-decoration: none; /* Remove underline from links */
         }
 
-        .bird-search form {
+         .bird-search form {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 150px;
+            margin-top: 90px; /* Move it closer to the blue header, adjust as needed */
+            width: 100%; /* Make the form full width */
         }
 
         #list {
             padding: 20px;
-            margin-top: 50px;
+            margin-top: 0px;
         }
 
         a:link {
@@ -260,6 +267,8 @@
             transition: background-color 0.3s, color 0.3s;
             margin-top: 5px;
         }
+
+        
 
     </style>
 </head>

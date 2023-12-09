@@ -264,6 +264,17 @@
         .user-info {
             font-size: 9pt;
         }
+
+        #existing-lists {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #new-list-form {
+            text-align: center;
+            margin-top: 50px;
+        }
+
     </style>
 </head>
 <body>
@@ -301,7 +312,7 @@
     <!-- Display existing lists -->
     <div id="existing-lists">
         <h2>Existing Lists</h2>
-        <ul>
+        <ul class='no-bullets'>
             {% for list in lists %}
                 <li>
                     <a class="white_content_link" href="{{ url_for('view_list', listid=list.listid) }}">{{ list.title }}</a>
@@ -324,7 +335,7 @@
 
     </div>
 
-    <hr>
+
 
 <script>
     function toggleMenu() {
