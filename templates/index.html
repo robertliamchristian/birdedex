@@ -204,11 +204,10 @@
         }
 
         .user-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px; 
-            font-size: 10pt;
+            text-align: center; /* Center align text */
+            display: block; /* Make link take the full area of the li */
+            padding: 10px 20px; /* Add some padding inside the button */
+            text-decoration: none; /* Remove underline from links */
         }
 
         .bird-search form {
@@ -237,6 +236,20 @@
             color: #FFFFFF;
         }
 
+        .mylistnav {
+            text-align: center; /* Center align text */
+            display: block; /* Make link take the full area of the li */
+            padding: 10px 20px; /* Add some padding inside the button */
+            border: 1px solid #cccccc; /* Thin grey border */
+            border-radius: 5px; /* Rounded corners for the button */
+            text-decoration: none; /* Remove underline from links */
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 5px;
+        }
+
+        .user-info {
+            font-size: 9pt;
+        }
       
     </style>
 </head>
@@ -244,9 +257,10 @@
     
     <div id="header">
         <div id="name_header">
-            <a href="{{ url_for('index') }}"><b>Birdédex</b></a>
+            <a href="{{ url_for('home') }}"><b>Birdédex</b></a>
             <div id="total-logged">Total Logged {{ sighted_count }}/{{ total_bird_count }}</div>
         </div>
+
         <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
     </div>
     
@@ -255,16 +269,11 @@
 
     
     {% if current_user.is_authenticated %}
-    <div class="mylistnav"><a href="{{ url_for('userlist') }}">My Lists</a></div>
+    
 
     <div class="menu-content">
-        <div class="user-info">
-            <span>Logged in as {{ current_user.username }}</span>
-            <form action="{{ url_for('logout') }}" method="post">
-                <input type="submit" value="Logout">
-            </form>
-        </div>
-        
+        <div class="mylistnav"><a href="{{ url_for('home') }}">Home</a></div>
+        <div class="mylistnav"><a href="{{ url_for('userlist') }}">My Lists</a></div>
         <div class="bird-search">
             <form action="/" method="post">
                 <input type="text" name="bird" id="bird-input" placeholder="Enter a bird name" oninput="fetchSuggestions()">
@@ -272,6 +281,14 @@
             </form>
         </div>
         <div id="suggestions" style="display:none;"></div>
+        <br>
+        <br>
+        <div class="user-info">
+            <span>Logged in as {{ current_user.username }}</span>
+            <form action="{{ url_for('logout') }}" method="post">
+                <input type="submit" value="Logout">
+            </form>
+        </div>
     </div>
     {% endif %}
 </div>

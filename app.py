@@ -197,9 +197,11 @@ def view_list(listid):
     return render_template('view_list.html', list=list, sightings=sightings_with_names)
 
 
-
-
 @app.route('/', methods=['GET', 'POST'])
+def home():
+    return render_template('home.html')
+
+@app.route('/birdedex', methods=['GET', 'POST'])
 def index():
     if not current_user.is_authenticated:
         return redirect(url_for('login'))
