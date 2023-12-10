@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Birdédex Lists</title>
-    <style>
         body {
             font-family: "Avenir Next", monospace;
             margin: 0;
@@ -19,7 +13,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #25b8f7;
+            background-color: #FF6B6B;
             color: white;
             z-index: 10;
             padding: 10px;
@@ -79,16 +73,55 @@
             color: #333;
         }
 
+        #home-content {
+            margin-top: 10px; 
+            padding: 20px;
+            overflow-y: auto;
+            height: calc(100vh - 100px);
+            background-color: #FFFFFF;
+            color: #333;
+            display: flex; /* Use Flexbox */
+            justify-content: center; /* Center align items horizontally */
+            align-items: center; /* Center align items vertically */
+        }
+
         ul.no-bullets {
             list-style-type: none;
             padding: 0;
         }
 
-      #suggestions {
-                width: calc(100% - 20px); /* Adjust width to line up with the input */
-                left: 10px; /* Align left edge with the input */
-                top: unset;
-                bottom: -100vh; /* Position it at the bottom of the form */
+        
+
+        .home-no-bullets li {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex: 1; 
+        }
+
+        .button {
+            display: block;
+            width: 50%; /* Set the width to 50% of its parent */
+            text-align: center;
+            padding: 10px 20px; /* Add some padding to make it look like a button */
+            margin: 5px;
+            background-color: #25b8f7; /* Replace with your button color */
+            color: #FF6B6B; /* Replace with your button text color */
+            text-decoration: none;
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Replace with the color you want on hover */
+        }
+
+        #suggestions {
+            width: calc(100% - 20px); /* Adjust width to line up with the input */
+            left: 10px; /* Align left edge with the input */
+            top: unset;
+            bottom: -100vh; /* Position it at the bottom of the form */
             }
 
         #suggestions div {
@@ -103,7 +136,7 @@
         }
 
         #update_message {
-            color: #FFFFFF;
+            color: #333;
             text-align: center;
             font-size: 12pt;
             padding: 0px;
@@ -137,7 +170,7 @@
             margin-top: -10px;
         }
 
-                .hamburger-menu {
+        .hamburger-menu {
             cursor: pointer;
             padding: 10px;
             font-size: 29pt;
@@ -216,7 +249,6 @@
             align-items: center;
         }
 
-
         a:link {
             text-decoration: none;
             color: #FFFFFF;
@@ -237,19 +269,6 @@
             color: #FFFFFF;
         }
 
-        .white_content_link:link{
-            color: #25b8f7;
-        }
-        .white_content_link:visited {
-            color: #25b8f7;
-        }
-        .white_content_link:hover {
-            color: #25b8f7;
-        }
-        .white_content_link:active {
-            color: #25b8f7;
-        }
-
         .mylistnav {
             text-align: center; /* Center align text */
             display: block; /* Make link take the full area of the li */
@@ -261,8 +280,30 @@
             margin-top: 5px;
         }
 
+        .white_content_link:link, .white_content_link:visited, .white_content_link:hover, .white_content_link:active {
+            color: #FFFFFF;
+            text-align: center; /* Center align text */
+            display: block; /* Make link take the full area of the li */
+            padding: 10px 20px; /* Add some padding inside the button */
+            border: 1px solid #cccccc; /* Thin grey border */
+            border-radius: 5px; /* Rounded corners for the button */
+            text-decoration: none; /* Remove underline from links */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .white_content_link:hover {
+            background-color: #cccccc; /* Change background on hover */
+            color: #ffffff; /* Change text color on hover */
+        }
+
         .user-info {
             font-size: 9pt;
+        }
+
+        .home_selection {
+            width: 100%; /* Take full width of the parent */
+            font-size: 14pt;
+            margin-top: -150px;
         }
 
         #existing-lists {
@@ -274,132 +315,4 @@
             text-align: center;
             margin-top: 50px;
         }
-
-    </style>
-</head>
-<body>
-    
-    <div id="header">
-        <div id="name_header">
-                <a href="{{ url_for('home') }}"><b>Birdédex Lists</b></a>
-            <div id="total-logged">Edit or create lists that will affect your Birdedex</div>
-        </div>
-        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
-    </div>
-    
-    <div id="slide-in-menu" class="menu">
-    <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
-    
-    
-    {% if current_user.is_authenticated %}
-    <div class="menu-content">
-        <div class="mylistnav"><a href="{{ url_for('home') }}">Home</a></div>
-        <div class="mylistnav"><a href="{{ url_for('index') }}">Birdedex</a></div>
-        <div class="user-info">
-            <span>Logged in as {{ current_user.username }}</span>
-            <form action="{{ url_for('logout') }}" method="post">
-                <input type="submit" value="Logout">
-            </form>
-        </div>
-        
-        
-    </div>
-    {% endif %}
-</div>
-
-    <h1>My Bird Lists</h1>
-    
-    <!-- Display existing lists -->
-   <div id="existing-lists">
-    <h2>Existing Lists</h2>
-    <ul class='no-bullets'>
-        {% for list in lists %}
-            <li style="display: flex; justify-content: center; align-items: center;">
-                <div style="flex-grow: 1; text-align: center;">
-                    <a class="white_content_link" href="{{ url_for('view_list', listid=list.listid) }}" style="margin-right: 10px;">{{ list.title }}</a>
-                    - Created on {{ list.created_at.strftime('%Y-%m-%d') }}
-                </div>
-                <!-- Delete List Form -->
-                <form action="{{ url_for('delete_list', listid=list.listid) }}" method="POST" onsubmit="return confirmDeleteList('{{ list.title }}')" style="margin-left: 10px;">
-                    <button type="submit">Delete List</button>
-                </form>
-            </li>
-        {% else %}
-            <li>No lists found.</li>
-        {% endfor %}
-    </ul>
-</div>
-
-<script>
-    function confirmDeleteList(listTitle) {
-        return confirm('Do you really want to delete the list "' + listTitle + '" and all its contents?');
-    }
-</script>
-
-    
-    <!-- Form to create a new list -->
-    <div id="new-list-form">
-        <h2>Create a New List</h2>
-        <form action="{{ url_for('userlist') }}" method="post">
-    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
-    <input type="text" name="list_name" placeholder="Enter list title" required>
-    <input type="submit" value="Create List">
-</form>
-
-    </div>
-
-
-
-<script>
-    function toggleMenu() {
-    var menu = document.getElementById("slide-in-menu");
-    menu.style.width = menu.style.width === '250px' ? '0' : '250px';
-}
-    window.onload = function() {
-        var element = document.getElementById("{{ anchor_id }}");
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-    };
-
-    function fetchSuggestions() {
-        var input = document.getElementById('bird-input');
-        var query = input.value;
-
-        if (query.length < 2) {
-            document.getElementById('suggestions').style.display = 'none';
-            return;
-        }
-
-        fetch('/suggest_birds?query=' + query)
-            .then(response => response.json())
-            .then(suggestions => {
-                var suggestionsDiv = document.getElementById('suggestions');
-                suggestionsDiv.innerHTML = '';
-                suggestions.forEach(function(suggestion) {
-                    var div = document.createElement('div');
-                    div.innerHTML = suggestion;
-                    div.onclick = function() {
-                        input.value = suggestion;
-                        suggestionsDiv.style.display = 'none';
-                    };
-                    suggestionsDiv.appendChild(div);
-                });
-                if (suggestions.length > 0) {
-                    suggestionsDiv.style.display = 'block';
-                } else {
-                    suggestionsDiv.style.display = 'none';
-                }
-            })
-            .catch(error => console.error('Error fetching suggestions:', error));
-    }
-
-    window.onclick = function(event) {
-        if (!event.target.matches('#bird-input')) {
-            document.getElementById('suggestions').style.display = 'none';
-        }
-    };
-    </script>
-
-</body>
-</html>
+      

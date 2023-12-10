@@ -197,6 +197,39 @@ def view_list(listid):
     return render_template('view_list.html', list=list, sightings=sightings_with_names)
 
 
+@app.route('/delete_sighting/<int:sightingid>', methods=['POST'])
+@login_required
+def delete_sighting(sightingid):
+    sighting = UserSighting.query.get_or_404(sightingid)
+    if sighting.userid != current_user.id:
+        # Prevent users from deleting sightings that do not belong to them
+        return redirect(url_for('index'))
+    
+    db.session.delete(sighting)
+    db.session.commit()
+    # Redirect to the previous page or the user list
+    return redirect(request.referrer or url_for('userlist'))
+
+@app.route('/delete_list/<int:listid>', methods=['POST'])
+@login_required
+def delete_list(listid):
+    list_to_delete = UserList.query.get_or_404(listid)
+    if list_to_delete.userid != current_user.id:
+        # Prevent users from deleting lists that do not belong to them
+        return redirect(url_for('index'))
+
+    # Delete all associated sightings if not using cascading deletes
+    UserSighting.query.filter_by(listid=listid).delete()
+
+    # Now delete the list itself
+    db.session.delete(list_to_delete)
+    db.session.commit()
+
+    return redirect(url_for('userlist'))
+
+
+
+
 @app.route('/', methods=['GET', 'POST'])
 def home():
     return render_template('home.html')
