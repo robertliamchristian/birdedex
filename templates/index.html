@@ -27,12 +27,13 @@
     <div class="menu-content">
         <div class="mylistnav"><a href="{{ url_for('home') }}">Home</a></div>
         <div class="mylistnav"><a href="{{ url_for('userlist') }}">My Lists</a></div>
-        <div class="bird-search">
-            <form action="/" method="post">
-                <input type="text" name="bird" id="bird-input" placeholder="Enter a bird name" oninput="fetchSuggestions()">
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+       <div class="bird-search">
+    <form action="{{ url_for('index') }}" method="post">
+        <input type="text" name="bird" id="bird-input" placeholder="Enter a bird name" oninput="fetchSuggestions()">
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
         <div id="suggestions" style="display:none;"></div>
         <br>
         <br>

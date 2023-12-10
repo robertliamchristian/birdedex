@@ -19,6 +19,20 @@
             padding: 10px;
         }
 
+        #alt-header {
+            display: flex;
+            justify-content: space-between; /* This will align children to each end */
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #25b8f7;
+            color: white;
+            z-index: 10;
+            padding: 10px;
+        }
+
         #name_header {
             font-size: 20pt;
             margin: 0;
@@ -56,6 +70,22 @@
 
         input[type="submit"]:hover {
             background-color: #2271e3;
+        }
+
+        #view-input input[type="text"] {
+            border: 1px solid #ccc; /* Light grey border */
+            border-radius: 5px; /* Rounded corners for the input field */
+            padding: 10px;
+            margin: 5px 0; /* Add margin on top and bottom */
+            width: calc(100% - 24px); /* Adjust width to account for padding and border */
+            max-width: none; /* Remove max-width restriction */
+        }
+
+        #view-input input[type="submit"] {
+            border: 1px solid #ccc; /* Light grey border for consistency */
+            border-radius: 5px; /* Match border radius with input field */
+            padding: 10px 20px; /* Adjust padding as needed */
+            margin-left: 10px; /* Add space between the input field and submit button */
         }
 
         #subheader {
@@ -145,7 +175,7 @@
 
         input[type="text"], input[type="submit"] {
             border: none;
-            border-radius: 20px;
+            border-radius: 10px;
             padding: 10px;
             margin: 5px;
             width: auto;
@@ -165,6 +195,11 @@
             max-width: 125px; /* Set a max-width that fits your design */
         }
 
+         #view-bird-input {
+            flex-grow: 1; /* or you can use width: 100%; */
+            margin-right: 10px;
+            
+        }
        #form_add_bird {
             position: relative;
             margin-top: -10px;
@@ -249,6 +284,14 @@
             align-items: center;
         }
 
+        .view-bird-search form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 90px; /* Move it closer to the blue header, adjust as needed */
+            width: 100%; /* Make the form full width */
+        }
+
         a:link {
             text-decoration: none;
             color: #FFFFFF;
@@ -296,6 +339,19 @@
             color: #ffffff; /* Change text color on hover */
         }
 
+         .list_white_content_link:link{
+            color: #25b8f7;
+        }
+        .list_white_content_link:visited {
+            color: #25b8f7;
+        }
+        .list_white_content_link:hover {
+            color: #25b8f7;
+        }
+        .list_white_content_link:active {
+            color: #25b8f7;
+        }
+
         .user-info {
             font-size: 9pt;
         }
@@ -314,5 +370,28 @@
         #new-list-form {
             text-align: center;
             margin-top: 50px;
+        }
+
+        #list {
+            padding: 20px;
+            margin-top: 0px;
+        }
+
+        #list_bird_add {
+            margin-top: 100px;
+        }
+
+        #content-bird-search form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 90px; /* Move it closer to the blue header, adjust as needed */
+            width: 92%; /* Make the form full width */
+        }
+
+        #view-bird-input {
+            flex-grow: 1; /* or you can use width: 100%; */
+            margin-right: 10px;
+            
         }
       

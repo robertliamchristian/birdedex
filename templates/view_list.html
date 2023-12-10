@@ -227,6 +227,7 @@
         #list {
             padding: 20px;
             margin-top: 0px;
+            font-size: 9pt;
         }
 
         a:link {
@@ -313,31 +314,34 @@
 </div>
 
     
-<div id="list">
+   <div id="list">
     <h1>{{ list.title }}</h1>
     <h3>Logged Birds:</h3>
     <ul>
-        {% for sighting, bird_name in sightings %}
-        <li style="display: flex; justify-content: center; align-items: center;">
-            <div style="flex-grow: 1; text-align: center;">
-                {{ sighting.birdref }}. {{ bird_name }} - {{ sighting.sighting_time.strftime('%m-%d-%Y') }}
-            </div>
-            <form action="{{ url_for('delete_sighting', sightingid=sighting.sightingid) }}" method="POST" onsubmit="return confirmDelete('{{ bird_name }}')" style="margin-left: 10px;">
-                <button type="submit">Delete</button>
-            </form>
-        </li>
+        {% for sighting_id, birdref, bird_name, latest_sighting_time in sightings %}
+            <li style="display: flex; justify-content: center; align-items: center;">
+                <div style="flex-grow: 1; text-align: center;">
+                    {{ birdref }}. {{ bird_name }} - {{ latest_sighting_time.strftime('%m-%d-%Y') }}
+                </div>
+                <form action="{{ url_for('delete_sighting', sightingid=sighting_id) }}" method="POST" style="margin-left: 10px;">
+    <button type="submit">Delete</button>
+</form>
+
+            </li>
         {% else %}
-        <li>No birds found in this list.</li>
+            <li>No birds found in this list.</li>
         {% endfor %}
     </ul>
 </div>
 
+
+
+
 <script>
     function confirmDelete(birdName) {
-        return confirm('Delete ' + birdName + ' from this list?');
+        return confirm('Do you really want to delete ' + birdName + ' from the list?');
     }
 </script>
-
 
 
 

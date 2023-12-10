@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, jsonify, redirect, url_for, session
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import func
 from flask_login import LoginManager, login_user, logout_user, current_user, login_required, UserMixin
 from datetime import datetime
 import os
@@ -164,13 +165,12 @@ def userlist():
 @login_required
 def view_list(listid):
     list = UserList.query.get_or_404(listid)
-    #print("List title:", list.title)  
 
     if list.userid != current_user.id:
-        return redirect(url_for('index'))  
+        return redirect(url_for('index'))
 
     if request.method == 'POST':
-        bird_name = request.form.get('bird')  
+        bird_name = request.form.get('bird')
         if bird_name:
             new_bird = Log.query.filter_by(bird=bird_name).first()
             if new_bird:
@@ -182,19 +182,34 @@ def view_list(listid):
                 )
                 db.session.add(new_sighting)
                 db.session.commit()
-            return redirect(url_for('view_list', listid=listid))  
+            return redirect(url_for('view_list', listid=listid))
 
-    
-    sightings_with_names = db.session.query(
-        UserSighting, Log.bird
+    # Query to get the most recent sighting of each bird in the list
+    sightings_with_names = []
+    distinct_sightings = db.session.query(
+        UserSighting.birdref,
+        Log.bird,
+        db.func.max(UserSighting.sighting_time).label('latest_sighting_time')
     ).join(
         Log, UserSighting.birdref == Log.birdid
     ).filter(
-        UserSighting.listid == listid, 
+        UserSighting.listid == listid,
         UserSighting.userid == current_user.id
+    ).group_by(
+        UserSighting.birdref,
+        Log.bird
     ).all()
 
+    for birdref, bird_name, latest_sighting_time in distinct_sightings:
+        sighting_id = UserSighting.query.filter(
+            UserSighting.birdref == birdref,
+            UserSighting.sighting_time == latest_sighting_time
+        ).first().sightingid
+
+        sightings_with_names.append((sighting_id, birdref, bird_name, latest_sighting_time))
+
     return render_template('view_list.html', list=list, sightings=sightings_with_names)
+
 
 
 @app.route('/delete_sighting/<int:sightingid>', methods=['POST'])
@@ -284,6 +299,7 @@ def index():
 
     sighted_count = len(user_sightings)
     total_bird_count = len(all_birds)
+
 
     return render_template('index.html', 
                            user_birdedex=user_birdedex, 
