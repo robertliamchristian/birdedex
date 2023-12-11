@@ -7,8 +7,8 @@
 
         #header {
             display: flex;
-            justify-content: space-between; /* This will align children to each end */
-            align-items: center;
+            justify-content: space-between;
+            align-items: flex-start; /* Align items to the start of the flex container (left side) */
             position: fixed;
             top: 0;
             left: 0;
@@ -17,6 +17,8 @@
             color: white;
             z-index: 10;
             padding: 10px;
+            flex-direction: column; /* Stack items vertically */
+            text-align: left; /* Align text to the left */
         }
 
         #alt-header {
@@ -33,12 +35,13 @@
             padding: 10px;
         }
 
+        
         #name_header {
             font-size: 20pt;
             margin: 0;
             color: #FFFFFF;
-            flex-shrink: 0;
-            margin-bottom: 0px;
+            width: 100%; /* Full width */
+            /* text-align: center removed to allow left alignment */
         }
 
         #center-container {
@@ -95,7 +98,7 @@
         }
 
         #content {
-            margin-top: 50px; /* Adjust based on actual header size */
+            margin-top: 80px; /* Adjust based on actual header size */
             padding: 20px;
             overflow-y: auto;
             height: calc(100vh - 100px);
@@ -166,11 +169,12 @@
         }
 
         #update_message {
-            color: #333;
-            text-align: center;
+            color: #FFFFFF;
             font-size: 12pt;
-            padding: 0px;
-            margin-top: -15px;
+            padding: 0px 0; /* Add padding to the top and bottom */
+            margin-top: 10px; /* Space above the message */
+            width: 100%; /* Full width */
+            /* text-align: center removed to allow left alignment */
         }
 
         input[type="text"], input[type="submit"] {

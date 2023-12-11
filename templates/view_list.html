@@ -11,10 +11,10 @@
             overflow-x: hidden;
         }
 
-        #header {
+        /* #header {
             padding: 15px 10px;
             display: flex;
-            justify-content: space-between; /* This will align children to each end */
+            justify-content: space-between; 
             align-items: center;
             position: fixed;
             top: 0;
@@ -24,15 +24,40 @@
             color: white;
             z-index: 10;
             padding: 10px;
+        } */
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Align items to the start of the flex container (left side) */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #25b8f7;
+            color: white;
+            z-index: 10;
+            padding: 10px;
+            flex-direction: column; /* Stack items vertically */
+            text-align: left; /* Align text to the left */
         }
 
-        #name_header {
+        /*#name_header {
             font-size: 20pt;
             margin: 0;
             color: #FFFFFF;
             flex-shrink: 0;
             margin-bottom: 0px;
+        }*/
+
+        #name_header {
+            font-size: 20pt;
+            margin: 0;
+            color: #FFFFFF;
+            width: 100%; /* Full width */
+            /* text-align: center removed to allow left alignment */
         }
+
 
         #center-container {
             display: flex;
@@ -82,6 +107,7 @@
 
         #content {
             padding-top: 100px; /* Increase this if your header is larger */
+
         }
 
         ul.no-bullets {
@@ -109,11 +135,13 @@
 
         #update_message {
             color: #FFFFFF;
-            text-align: center;
             font-size: 12pt;
-            padding: 0px;
-            margin-top: -15px;
+            padding: 0px 0; /* Add padding to the top and bottom */
+            margin-top: 10px; /* Space above the message */
+            width: 100%; /* Full width */
+            /* text-align: center removed to allow left alignment */
         }
+
 
         input[type="text"], input[type="submit"] {
             border: none;
@@ -220,7 +248,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 90px; /* Move it closer to the blue header, adjust as needed */
+            margin-top: 120px; /* Move it closer to the blue header, adjust as needed */
             width: 100%; /* Make the form full width */
         }
 
@@ -276,10 +304,19 @@
 <body>
     
     <div id="header">
-        <div id="name_header">
-            <a href="{{ url_for('home') }}"><b>Birdédex Lists</b></a>
-            <div id="total-logged">Add sightings to your list</div>
-        </div>
+    <div id="name_header">
+        <a href="{{ url_for('home') }}"><b>Birdédex Lists</b></a>
+        <div id="total-logged">Add sightings to your list</div>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div id="update_message" class="{{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
 
         <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
     </div>

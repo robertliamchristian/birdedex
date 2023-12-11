@@ -9,6 +9,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired
+from flask import flash
 
 
 load_dotenv()
@@ -130,21 +131,21 @@ def suggest_birds():
 @login_required
 def userlist():
     if request.method == 'POST':
-        # Logic to handle list creation or adding birds to a list
+        
         list_name = request.form.get('list_name')
         if list_name:
-            # Create a new list
+
             new_list = UserList(userid=current_user.id, title=list_name)
             db.session.add(new_list)
             db.session.commit()
-            # Redirect to the list view page where user can add birds to the new list
+
             return redirect(url_for('view_list', listid=new_list.listid))
 
-        # If adding birds to an existing list, retrieve listid from form
+        
         listid = request.form.get('listid')
         bird_name = request.form.get('bird')
         if listid and bird_name:
-            # Logic to add bird to the list
+           
             new_bird = Log.query.filter_by(bird=bird_name).first()
             if new_bird:
                 new_sighting = UserSighting(
@@ -156,7 +157,7 @@ def userlist():
                 db.session.add(new_sighting)
                 db.session.commit()
 
-    # GET request logic to display the user's lists
+    
     lists = UserList.query.filter_by(userid=current_user.id).all()
     csrf_token = session.get('_csrf_token')
     return render_template('userlist.html', lists=lists, csrf_token=csrf_token)
@@ -165,27 +166,36 @@ def userlist():
 @login_required
 def view_list(listid):
     list = UserList.query.get_or_404(listid)
+    message = None  
 
     if list.userid != current_user.id:
         return redirect(url_for('index'))
 
+    sightings_with_names = []
     if request.method == 'POST':
         bird_name = request.form.get('bird')
         if bird_name:
             new_bird = Log.query.filter_by(bird=bird_name).first()
             if new_bird:
-                new_sighting = UserSighting(
-                    birdref=new_bird.birdid, 
-                    userid=current_user.id, 
-                    sighting_time=datetime.now(), 
-                    listid=listid
-                )
-                db.session.add(new_sighting)
+                existing_sighting = UserSighting.query.filter_by(
+                    birdref=new_bird.birdid, listid=listid
+                ).order_by(UserSighting.sighting_time.desc()).first()
+                
+                if existing_sighting:
+                    existing_sighting.sighting_time = datetime.now()
+                    message = f"{bird_name} sighting updated."
+                else:
+                    new_sighting = UserSighting(
+                        birdref=new_bird.birdid, 
+                        userid=current_user.id, 
+                        sighting_time=datetime.now(), 
+                        listid=listid
+                    )
+                    db.session.add(new_sighting)
+                    message = f"New sighting of {bird_name} added!"
                 db.session.commit()
-            return redirect(url_for('view_list', listid=listid))
+                flash(message)
 
-    # Query to get the most recent sighting of each bird in the list
-    sightings_with_names = []
     distinct_sightings = db.session.query(
         UserSighting.birdref,
         Log.bird,
@@ -208,8 +218,10 @@ def view_list(listid):
 
         sightings_with_names.append((sighting_id, birdref, bird_name, latest_sighting_time))
 
-    return render_template('view_list.html', list=list, sightings=sightings_with_names)
+    if request.method == 'POST':
+        return redirect(url_for('view_list', listid=listid))
 
+    return render_template('view_list.html', list=list, sightings=sightings_with_names)
 
 
 @app.route('/delete_sighting/<int:sightingid>', methods=['POST'])
@@ -265,12 +277,12 @@ def index():
             existing_sighting = UserSighting.query.filter_by(birdref=new_bird.birdid, userid=current_user.id).first()
             if existing_sighting:
                 existing_sighting.sighting_time = datetime.now()
-                message = f"{new_bird_name} sighting updated."
+                message = f"{new_bird_name} sighting added"
                 anchor_id = f"bird-{new_bird.birdid}"
             else:
                 new_sighting = UserSighting(birdref=new_bird.birdid, userid=current_user.id, sighting_time=datetime.now())
                 db.session.add(new_sighting)
-                message = f"New sighting of {new_bird_name} added."
+                message = f"First sighting for {new_bird_name} added!"
                 anchor_id = f"bird-{new_bird.birdid}"
 
             db.session.commit()
