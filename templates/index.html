@@ -56,15 +56,16 @@
         {% for bird_type, bird_list in user_birdedex.items() %}
             <h3>{{ bird_type }}</h3>
             <ul class="no-bullets">
-                {% for birdid, bird_name, sighting_time in bird_list %}
-                    <li> 
-                        {{ birdid }}. {{ bird_name }} 
-                        {% if sighting_time %}
-                            - {{ sighting_time.strftime('%m-%d-%Y') }}
-                        {% endif %}
-                    </li>
-                {% endfor %}
-            </ul>
+    {% for birdid, bird_name, sighting_time in bird_list %}
+        <li id="bird-{{ birdid }}"> 
+            {{ birdid }}. {{ bird_name }} 
+            {% if sighting_time %}
+                - {{ sighting_time.strftime('%m-%d-%Y') }}
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
+
         {% endfor %}
     </div>
 
@@ -76,11 +77,17 @@
     menu.style.width = menu.style.width === '250px' ? '0' : '250px';
 }
     window.onload = function() {
-        var element = document.getElementById("{{ anchor_id }}");
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    setTimeout(function() {
+        var anchor_id = "{{ anchor_id }}";  // Get the anchor_id passed from Flask
+        if(anchor_id) {
+            var element = document.getElementById(anchor_id);
+            if(element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
         }
-    };
+    }, 100); // Adjust the timeout as needed
+}
+
 
     function fetchSuggestions() {
         var input = document.getElementById('bird-input');

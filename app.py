@@ -281,15 +281,14 @@ def index():
             existing_sighting = UserSighting.query.filter_by(birdref=new_bird.birdid, userid=current_user.id).first()
             if existing_sighting:
                 existing_sighting.sighting_time = datetime.now()
-                message = f"{new_bird_name} sighting added"
-                anchor_id = f"bird-{new_bird.birdid}"
+                message = f"{new_bird_name} sighting updated."
             else:
                 new_sighting = UserSighting(birdref=new_bird.birdid, userid=current_user.id, sighting_time=datetime.now())
                 db.session.add(new_sighting)
-                message = f"First sighting for {new_bird_name} added!"
-                anchor_id = f"bird-{new_bird.birdid}"
+                message = f"New sighting of {new_bird_name} added."
 
             db.session.commit()
+            anchor_id = f"bird-{new_bird.birdid}"  
 
     all_birds = Log.query.order_by(Log.family).all()
 
