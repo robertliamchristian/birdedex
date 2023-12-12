@@ -291,6 +291,8 @@ def index():
             anchor_id = f"bird-{new_bird.birdid}"  
 
     all_birds = Log.query.order_by(Log.family).all()
+    distinct_sighted_bird_count = UserSighting.query.with_entities(UserSighting.birdref).filter_by(userid=current_user.id).distinct().count()
+    total_distinct_bird_count = Log.query.distinct(Log.birdid).count()
 
     user_sightings = UserSighting.query.filter_by(userid=current_user.id).all()
     user_sightings_dict = {sighting.birdref: sighting for sighting in user_sightings}
@@ -316,11 +318,11 @@ def index():
     total_bird_count = len(all_birds)
 
 
-    return render_template('index.html', 
-                           user_birdedex=user_birdedex, 
-                           message=message, 
-                           sighted_count=sighted_count, 
-                           total_bird_count=total_bird_count,
+    return render_template('index.html',
+                           user_birdedex=user_birdedex,
+                           message=message,
+                           sighted_count=distinct_sighted_bird_count, 
+                           total_bird_count=total_distinct_bird_count,
                            anchor_id=anchor_id)
 
 if __name__ == '__main__':

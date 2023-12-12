@@ -11,7 +11,7 @@
     <div id="header">
     <div id="name_header">
         <a href="{{ url_for('home') }}"><b>Birdédex</b></a>
-        <div id="total-logged">Total Logged {{ sighted_count }}/{{ total_bird_count }}</div>
+        <div id="total-logged">Total Distinct Birds Logged {{ sighted_count }}/{{ total_bird_count }}</div>
         {% if message %}
             <div id="update_message">{{ message }}</div>
         {% endif %}
