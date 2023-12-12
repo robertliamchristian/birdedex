@@ -107,15 +107,11 @@
         }
 
         #home-content {
-            margin-top: 10px; 
-            padding: 20px;
-            overflow-y: auto;
-            height: calc(100vh - 100px);
-            background-color: #FFFFFF;
-            color: #333;
-            display: flex; /* Use Flexbox */
-            justify-content: center; /* Center align items horizontally */
-            align-items: center; /* Center align items vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2em;
+            height: calc(100vh - 100px); /* Adjust as needed */
         }
 
         ul.no-bullets {
@@ -134,17 +130,28 @@
 
         .button {
             display: block;
-            width: 50%; /* Set the width to 50% of its parent */
+            width: 50%; 
             text-align: center;
-            padding: 10px 20px; /* Add some padding to make it look like a button */
+            padding: 10px 20px; 
             margin: 5px;
-            background-color: #25b8f7; /* Replace with your button color */
-            color: #FF6B6B; /* Replace with your button text color */
+            background-color: #25b8f7; 
+            color: #FF6B6B; 
             text-decoration: none;
-            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            transition: background-color 0.3s ease; 
             border: none;
             cursor: pointer;
+            display: inline-block; /* Change from block to inline-block */
+            padding: 1em 2em; /* More padding for a larger button */
+            margin: 0.5em; /* Space around the buttons */
+            font-size: 1em; /* Adjust font size as needed */
         }
+
+        @media (min-width: 768px) {
+            .button {
+                max-width: 200px; /* Maximum button width */
+            }
+}
+
 
         .button:hover {
             background-color: #0056b3; /* Replace with the color you want on hover */

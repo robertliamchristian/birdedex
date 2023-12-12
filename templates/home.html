@@ -35,14 +35,18 @@
 </div>
 
 
-<div id="home-content">
-    <div class="home_selection">
-        <ul class="home-no-bullets">
-            <li><a class="white_content_link button" href="{{ url_for('index') }}">Birdedex</a></li>
-            <li><a class="white_content_link button" href="{{ url_for('userlist') }}">My Lists</a></li>
-        </ul>
-    </div>
-</div>
+<section id="home-content">
+        <nav class="home_selection">
+            <ul class="home-no-bullets">
+                <li>
+                    <div>Total Distinct Birds Logged {{ sighted_count }}/{{ total_bird_count }}</div>
+                </li>
+                <li><a class="button" href="{{ url_for('index') }}">Birdedex</a></li>
+                <li><a class="button" href="{{ url_for('userlist') }}">My Lists</a></li>
+                
+            </ul>
+        </nav>
+    </section>
 
 
 

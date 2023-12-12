@@ -263,7 +263,16 @@ def delete_list(listid):
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    return render_template('home.html')
+    if not current_user.is_authenticated:
+        return redirect(url_for('login'))
+
+    distinct_sighted_bird_count = UserSighting.query.with_entities(UserSighting.birdref).filter_by(userid=current_user.id).distinct().count()
+    total_distinct_bird_count = Log.query.distinct(Log.birdid).count()
+
+
+    return render_template('home.html',
+                            sighted_count=distinct_sighted_bird_count, 
+                            total_bird_count=total_distinct_bird_count,)
 
 @app.route('/birdedex', methods=['GET', 'POST'])
 def index():
@@ -298,7 +307,7 @@ def index():
     user_sightings_dict = {sighting.birdref: sighting for sighting in user_sightings}
 
     user_birdedex = {}
-    default_bird_type = "Other"  # For birds without a specified type
+    default_bird_type = "Other"  
 
     for bird in all_birds:
         family = bird.family if bird.family else default_bird_type
