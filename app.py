@@ -210,6 +210,7 @@ def view_list(listid):
         Log.bird
     ).all()
 
+
     for birdref, bird_name, latest_sighting_time in distinct_sightings:
         sighting_id = UserSighting.query.filter(
             UserSighting.birdref == birdref,
@@ -221,7 +222,10 @@ def view_list(listid):
     if request.method == 'POST':
         return redirect(url_for('view_list', listid=listid))
 
-    return render_template('view_list.html', list=list, sightings=sightings_with_names)
+    bird_count = UserSighting.query.filter_by(listid=listid).distinct(UserSighting.birdref).count()
+
+
+    return render_template('view_list.html', list=list, sightings=sightings_with_names, bird_count=bird_count)
 
 
 @app.route('/delete_sighting/<int:sightingid>', methods=['POST'])

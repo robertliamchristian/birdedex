@@ -297,7 +297,22 @@
             margin-top: 5px;
         }
 
-        
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px; /* Add some space between list items */
+        }
+
+        li div {
+            text-align: left; /* Align the text of the div to the left */
+            flex-grow: 1; /* Allow the div to grow and take up available space */
+        }
+
+        li form {
+            margin-left: 10px; /* Maintain spacing between the text and the button */
+        }
+
 
     </style>
 </head>
@@ -352,23 +367,23 @@
 
     
    <div id="list">
-    <h1>{{ list.title }}</h1>
+    <h1>{{ list.title }} - Bird Count : {{ bird_count }}</h1>
     <h3>Logged Birds:</h3>
     <ul>
-        {% for sighting_id, birdref, bird_name, latest_sighting_time in sightings %}
-            <li style="display: flex; justify-content: center; align-items: center;">
-                <div style="flex-grow: 1; text-align: center;">
-                    {{ birdref }}. {{ bird_name }} - {{ latest_sighting_time.strftime('%m-%d-%Y') }}
-                </div>
-                <form action="{{ url_for('delete_sighting', sightingid=sighting_id) }}" method="POST" style="margin-left: 10px;">
-    <button type="submit">Delete</button>
-</form>
+    {% for sighting_id, birdref, bird_name, latest_sighting_time in sightings %}
+    <li>
+        <div>
+            {{ birdref }}. {{ bird_name }} - {{ latest_sighting_time.strftime('%m-%d-%Y') }}
+        </div>
+        <form action="{{ url_for('delete_sighting', sightingid=sighting_id) }}" method="POST">
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+    {% else %}
+    <li>No birds found in this list.</li>
+    {% endfor %}
+</ul>
 
-            </li>
-        {% else %}
-            <li>No birds found in this list.</li>
-        {% endfor %}
-    </ul>
 </div>
 
 
