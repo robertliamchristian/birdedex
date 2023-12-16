@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        .checkbox-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    
+        .checkbox-container input[type="checkbox"] {
+            display: none;
+        }
+    
+        .checkbox-container label {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    
+        .checkbox-container input[type="checkbox"]:checked + label,
+        .checkbox-container label:hover {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Birdédex</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pstyle.css') }}">
+</head>
+<body>
+    <div id="header">
+        <div id="name_header">
+            <a href="{{ url_for('home') }}"><b>Birdédex</b></a>
+            <div id="total-logged">Thanks for using Birdedex! <a href="https://www.buymeacoffee.com/birdedex">Buy me a coffee</a></div>
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+    </div>
+    
+    <div id="slide-in-menu" class="menu">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+
+    
+    {% if current_user.is_authenticated %}
+
+
+    <div class="menu-content">
+        <div class="user-info">
+            <span>Logged in as {{ current_user.username }}</span>
+            <form action="{{ url_for('logout') }}" method="post">
+                <input type="submit" value="Logout">
+            </form>
+        </div>
+        
+
+    </div>
+    {% endif %}
+</div>
+
+<div id="content">
+<!--  Main Content  -->
+
+
+
+<form id="search-form" action="{{ url_for('identify') }}" method="post">
+    <div class="checkbox-container">
+        <input type="checkbox" id="black" name="color" value="BLACK">
+        <label for="black">Black</label>
+        <input type="checkbox" id="blue" name="color" value="BLUE">
+        <label for="blue">Blue</label>
+        <input type="checkbox" id="brown" name="color" value="BROWN">
+        <label for="brown">Brown</label>
+        <input type="checkbox" id="gray" name="color" value="GRAY">
+        <label for="gray">Gray</label>
+        <input type="checkbox" id="green" name="color" value="GREEN">
+        <label for="green">Green</label>
+        <input type="checkbox" id="olive" name="color" value="OLIVE">
+        <label for="olive">Olive</label>
+        <input type="checkbox" id="orange" name="color" value="ORANGE">
+        <label for="orange">Orange</label>
+        <input type="checkbox" id="pink" name="color" value="PINK">
+        <label for="pink">Pink</label>
+        <input type="checkbox" id="purple" name="color" value="PURPLE">
+        <label for="purple">Purple</label>
+        <input type="checkbox" id="red" name="color" value="RED">
+        <label for="red">Red</label>
+        <input type="checkbox" id="reddish-brown" name="color" value="REDDISH-BROWN">
+        <label for="reddish-brown">Reddish-Brown</label>
+        <input type="checkbox" id="tan" name="color" value="TAN">
+        <label for="tan">Tan</label>
+        <input type="checkbox" id="white" name="color" value="WHITE">
+        <label for="white">White</label>
+        <input type="checkbox" id="yellow" name="color" value="YELLOW">
+        <label for="yellow">Yellow</label>
+    </div>
+    <!-- Add more checkboxes as needed -->
+    <input type="submit" value="Submit">
+</form>
+
+<div id="results">
+    <!-- Results or No results message will go here -->
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $('#search-form').on('change', function(event) {
+        event.preventDefault();  // Prevent the form from being submitted normally
+
+        $.ajax({
+            type: 'POST',
+            url: '/identify',
+            data: $(this).serialize(),  // Serialize the form data
+            success: function(data) {
+                // Clear the results div
+                $('#results').empty();
+
+                // Loop through the results and append them to the results div
+                $.each(data, function(index, result) {
+                    $('#results').append('<div>' + result.birdid + ' - ' + result.bird + '</div>');
+                });
+            }
+        });
+    });
+
+    function toggleMenu() {
+        var menu = document.getElementById("slide-in-menu");
+        menu.style.width = menu.style.width === '250px' ? '0' : '250px';
+    }
+
+    window.onload = function() {
+        var element = document.getElementById("{{ anchor_id }}");
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    };
+</script>
+
+    function fetchSuggestions() {
+        var input = document.getElementById('bird-input');
+        var query = input.value;
+    }
+
+        if (query.length < 2) {
+            document.getElementById('suggestions').style.display = 'none';
+            return;
+        }
+
+        fetch('/suggest_birds?query=' + query)
+            .then(response => response.json())
+            .then(suggestions => {
+                var suggestionsDiv = document.getElementById('suggestions');
+                suggestionsDiv.innerHTML = '';
+                suggestions.forEach(function(suggestion) {
+                    var div = document.createElement('div');
+                    div.innerHTML = suggestion;
+                    div.onclick = function() {
+                        input.value = suggestion;
+                        suggestionsDiv.style.display = 'none';
+                    };
+                    suggestionsDiv.appendChild(div);
+                });
+                if (suggestions.length > 0) {
+                    suggestionsDiv.style.display = 'block';
+                } else {
+                    suggestionsDiv.style.display = 'none';
+                }
+            })
+            .catch(error => console.error('Error fetching suggestions:', error));
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('#bird-input')) {
+            document.getElementById('suggestions').style.display = 'none';
+        }
+    };
+    </script>
+</body>
+
+</html>

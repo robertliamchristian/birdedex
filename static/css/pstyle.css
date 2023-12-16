@@ -405,4 +405,12 @@
             margin-right: 10px;
             
         }
+
+        option {
+            color: black;
+        }
+
+        label {
+            color: black;
+        }
       

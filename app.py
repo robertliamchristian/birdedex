@@ -60,7 +60,7 @@ class User(UserMixin, db.Model):
 
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
-
+    
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
@@ -70,6 +70,17 @@ class RegistrationForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
     submit = SubmitField('Register')
+
+class Color(db.Model):
+    __tablename__ = 'color_dim'
+    color_id = db.Column(db.Integer, primary_key=True)
+    color = db.Column(db.String(255), nullable=True)
+
+class ColorJunction(db.Model):
+    __tablename__ = 'color_junction'
+    color_bird_assoc_id = db.Column(db.Integer, primary_key=True)
+    birdref = db.Column(db.Integer, nullable=True)
+    color_ref = db.Column(db.Integer, nullable=True)
 
 class Log(db.Model): 
     __tablename__ = 'log'
@@ -85,6 +96,10 @@ class Log(db.Model):
 
     def __repr__(self):
         return f'<log {self.birdid}>'
+
+    def to_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -259,6 +274,37 @@ def delete_list(listid):
     return redirect(url_for('userlist'))
 
 
+
+
+
+@app.route('/identify', methods=['GET', 'POST'])
+def identify():
+    if request.method == 'POST':
+        colors = request.form.getlist('color')
+
+        # Construct the query
+        query = db.session.query(Log).\
+            join(ColorJunction, Log.birdid == ColorJunction.birdref).\
+            join(Color, ColorJunction.color_ref == Color.color_id)
+
+        # Apply color filter
+        if colors:
+            query = query.filter(Color.color.in_(colors))
+
+        # Group by birdid and filter groups by those having all colors
+        query = query.group_by(Log.birdid).having(func.count('*') == len(colors))
+
+        # Execute the query
+        results = query.all()
+
+        # Convert results to a list of dictionaries
+        results = [result.to_dict() for result in results]
+
+        # Return results as JSON
+        return jsonify(results)
+
+    # Render the search form initially
+    return render_template('identify.html')
 
 
 @app.route('/', methods=['GET', 'POST'])
